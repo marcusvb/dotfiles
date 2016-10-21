@@ -1,0 +1,22 @@
+# Themes
+pdf-view
+atom-sublime-monokai-syntax
+
+#
+# Languages
+language-fish-shell
+language-applescript
+language-lua
+atom-typescript
+#
+# Plugins
+atom-beautify
+autoclose-html
+highlight-selected
+linter
+minimap
+pigments
+project-manager
+split-diff
+todo-show
+script
