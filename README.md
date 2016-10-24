@@ -101,3 +101,5 @@ verbose way, unlinking the existing file first, might it exist
 ### Vim (vim/)
 * setup.sh - Symlinks all vim files to ~/
 * .vimrc - Basic Vim configuration
+
+### Big thanks to rkalis for original source code
