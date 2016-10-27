@@ -6,4 +6,5 @@ function update
     brew cleanup
     npm install npm -g
     npm update -g
+    apm update
 end

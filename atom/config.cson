@@ -4,7 +4,6 @@
   "autoclose-html": {}
   core:
     audioBeep: false
-    openEmptyEditorOnStart: false
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"
