@@ -5,18 +5,10 @@
 2. Install Homebrew (with taps) and git
 
   ```bash
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)";\
-  brew tap caskroom/cask;\
-  brew tap caskroom/versions;\
-  brew tap homebrew/completions;\
-  brew tap homebrew/core;\
-  brew tap homebrew/php;\
-  brew tap homebrew/versions;\
-  brew tap marcusvb/tap;\
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   brew install git
   ```
 3. Clone this repository
-
   ```
   git clone git@github.com:marcusvb/dotfiles.git
   ```
@@ -24,7 +16,7 @@
 5. Install missing applications from the Mac App Store or Internet
   * [UvAVPN](http://student.uva.nl/en/az/content/uvavpn/\download/download-uvavpn-software.html)
 
-6. Add Symlinks for owncloud
+6. Make sure owncloud is setup and run. For owncloud-homedir Symlinks run:
     ```
     sudo -v
     rm -rf ~/Documents
@@ -102,4 +94,4 @@ verbose way, unlinking the existing file first, might it exist
 * setup.sh - Symlinks all vim files to ~/
 * .vimrc - Basic Vim configuration
 
-### Big thanks to rkalis for original source code
+### Big thanks to github.com/rkalis for original source code
