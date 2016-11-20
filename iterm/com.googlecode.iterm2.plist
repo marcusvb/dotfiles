@@ -12,6 +12,8 @@
 	<integer>1</integer>
 	<key>Default Bookmark Guid</key>
 	<string>3A91C5B7-BC68-4076-9CE0-C7B7FA7C4897</string>
+	<key>HideFromDockAndAppSwitcher</key>
+	<true/>
 	<key>HotKeyBookmark</key>
 	<string>3A91C5B7-BC68-4076-9CE0-C7B7FA7C4897</string>
 	<key>HotKeyTogglesWindow</key>
@@ -60,8 +62,10 @@
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>410 372 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>455 241 796 473 0 0 1440 877 </string>
+	<string>317 267 1018 447 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 448 1440 429 0 0 1440 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_3A91C5B7-BC68-4076-9CE0-C7B7FA7C4897</key>
@@ -672,6 +676,8 @@
 			<string>/Users/marcus</string>
 		</dict>
 	</array>
+	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
+	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>D980FCFE-35DA-4038-9D99-8E110DC0606F</string>
 	<key>NoSyncPermissionToShowTip</key>
@@ -728,12 +734,12 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-10-18T12:24:11Z</date>
+	<date>2016-11-17T19:35:05Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
 	<real>0.10000000000000001</real>
 	<key>iTerm Version</key>
-	<string>3.0.10</string>
+	<string>3.0.12</string>
 </dict>
 </plist>

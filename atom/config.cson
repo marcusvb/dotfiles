@@ -1,6 +1,8 @@
 "*":
   "atom-beautify":
     _analyticsUserId: "9f24e8fc-8cbe-466c-8ccd-2acf3f2f5104"
+    general:
+      _analyticsUserId: "b2393b05-24ba-48e6-bc10-db4fa780407a"
   "autoclose-html": {}
   core:
     audioBeep: false
@@ -11,7 +13,6 @@
     ]
   editor:
     backUpBeforeSaving: true
-    fontSize: 12
     invisibles: {}
     scrollPastEnd: true
     showIndentGuide: true
@@ -28,6 +29,8 @@
     disableAnimations: true
     fileIcons: false
   "todo-show": {}
+  "tree-view":
+    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
 ".source.ts":
@@ -39,3 +42,5 @@
 ".text.todo":
   editor:
     autoIndent: true
+"tree-view":
+  hideVcsIgnoredFiles: true
