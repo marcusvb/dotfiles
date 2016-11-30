@@ -12,3 +12,6 @@ set -x -g PATH (brew --prefix findutils)/libexec/gnubin $PATH
 
 # User bin folder
 set -x -g PATH $PATH ~/bin /usr/local/sbin
+
+#thefuck
+eval (thefuck --alias | tr '\n' ';')

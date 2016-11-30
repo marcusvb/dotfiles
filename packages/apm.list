@@ -1,6 +1,6 @@
 # Themes
 pdf-view
-atom-sublime-monokai-syntax
+#atom-sublime-monokai-syntax
 
 #
 # Languages
@@ -20,3 +20,7 @@ project-manager
 split-diff
 todo-show
 script
+
+#rosknor shizzle
+monokalis
+highlight-line seti-ui file-icons

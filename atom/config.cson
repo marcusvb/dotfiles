@@ -8,8 +8,8 @@
     audioBeep: false
     telemetryConsent: "no"
     themes: [
-      "one-dark-ui"
-      "atom-sublime-monokai-syntax"
+      "seti-ui"
+      "monokalis"
     ]
   editor:
     backUpBeforeSaving: true
@@ -26,11 +26,13 @@
       "git-diff": true
       "git-diffDecorationsZIndex": 0
   "seti-ui":
+    compactView: true
     disableAnimations: true
     fileIcons: false
   "todo-show": {}
   "tree-view":
     hideVcsIgnoredFiles: true
+    squashDirectoryNames: true
   welcome:
     showOnStartup: false
 ".source.ts":
