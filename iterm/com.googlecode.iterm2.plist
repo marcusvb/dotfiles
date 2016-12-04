@@ -726,7 +726,7 @@
 	<key>PrefsCustomFolder</key>
 	<string>/Users/marcus/repos/dotfiles/iterm</string>
 	<key>PromptOnQuit</key>
-	<false/>
+	<true/>
 	<key>QuitWhenAllWindowsClosed</key>
 	<false/>
 	<key>SUEnableAutomaticChecks</key>
