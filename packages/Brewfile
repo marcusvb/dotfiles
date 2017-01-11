@@ -6,7 +6,10 @@
  +tap 'homebrew/completions'
  +tap 'marcusvb/tap'
  +tap 'homebrew/versions'
+ +tap'buo'
+
  +
+ +brew 'cask-upgrade'
  +brew 'coreutils'
  +brew 'findutils'
  +brew 'wget'
