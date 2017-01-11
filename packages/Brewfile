@@ -6,7 +6,7 @@
  +tap 'homebrew/completions'
  +tap 'marcusvb/tap'
  +tap 'homebrew/versions'
- +tap'buo'
+ +tap 'buo'
 
  +
  +brew 'cask-upgrade'
