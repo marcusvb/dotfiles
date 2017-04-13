@@ -30,6 +30,7 @@
  +brew 'nload'
  +brew 'youtube-dl'
  +brew 'thefuck'
+ +brew 'android-platform-tools'
  +
  +
  +# Essentials
@@ -37,6 +38,7 @@
  +cask 'iterm2'
  +cask 'sshfs'
  +cask 'whatsapp'
+ +cask 'avast-mac-security'
  +cask 'google-chrome'
  +cask 'the-unarchiver'
  +cask 'adobe-reader'
