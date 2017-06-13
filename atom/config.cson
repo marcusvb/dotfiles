@@ -21,6 +21,8 @@
   "exception-reporting":
     userId: "15784b65-094e-6842-daeb-6fa8266a9c44"
   "git-plus": {}
+  "linter-ui-default":
+    panelHeight: 56
   minimap:
     plugins:
       "git-diff": true
