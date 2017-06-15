@@ -47,7 +47,7 @@
  +cask 'alarm-clock'
  +cask 'beardedspice'
  +cask 'flux'
- +cask 'my-push-pal'
+ +cask 'pb-for-desktop'
  +cask 'filezilla'
  +
  +
