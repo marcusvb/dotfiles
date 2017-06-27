@@ -14,6 +14,8 @@
 	<string>3A91C5B7-BC68-4076-9CE0-C7B7FA7C4897</string>
 	<key>HideFromDockAndAppSwitcher</key>
 	<true/>
+	<key>HideTab</key>
+	<false/>
 	<key>HotKeyBookmark</key>
 	<string>3A91C5B7-BC68-4076-9CE0-C7B7FA7C4897</string>
 	<key>HotKeyTogglesWindow</key>
@@ -51,21 +53,14 @@
 		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
 		hAErATGG
 		</data>
-		<string>307</string>
+		<string>322</string>
 	</array>
 	<key>NSTableView Hidden Columns KeyBingingTable</key>
 	<array/>
 	<key>NSTableView Sort Ordering KeyBingingTable</key>
 	<array/>
-	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
-	<dict>
-		<key>TB Is Shown</key>
-		<integer>1</integer>
-	</dict>
-	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>410 372 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>317 267 1018 447 0 0 1440 877 </string>
+	<string>170 202 796 473 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 448 1440 429 0 0 1440 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_3A91C5B7-BC68-4076-9CE0-C7B7FA7C4897</key>
@@ -679,15 +674,13 @@
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
-	<string>D980FCFE-35DA-4038-9D99-8E110DC0606F</string>
+	<string>FC26F848-C671-413E-B3EA-67A33FDA8A0D</string>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
-	<key>NoSyncPermissionToShowTip</key>
-	<false/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>498272154.45600498</real>
+	<real>520286321.95510399</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>PointerActions</key>
@@ -726,7 +719,7 @@
 	<key>PrefsCustomFolder</key>
 	<string>/Users/marcus/repos/dotfiles/iterm</string>
 	<key>PromptOnQuit</key>
-	<true/>
+	<false/>
 	<key>QuitWhenAllWindowsClosed</key>
 	<false/>
 	<key>SUEnableAutomaticChecks</key>
@@ -734,20 +727,22 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/final.xml?shard=7</string>
+	<string>https://iterm2.com/appcasts/final.xml?shard=77</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-11-22T00:41:51Z</date>
+	<date>2017-06-27T19:59:48Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
 	<real>0.10000000000000001</real>
+	<key>TabStyle</key>
+	<integer>3</integer>
 	<key>findIgnoreCase_iTerm</key>
 	<true/>
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.12</string>
+	<string>3.0.15</string>
 </dict>
 </plist>

@@ -7,7 +7,7 @@ set -x -g PATH (brew --prefix coreutils)/libexec/gnubin $PATH
 # set -x -g MANPATH (brew --prefix coreutils)/libexec/gnuman $MANPATH
 
 # Findutils bin and man folders
-set -x -g PATH (brew --prefix findutils)/libexec/gnubin $PATH
+#set -x -g PATH (brew --prefix findutils)/libexec/gnubin $PATH
 # set -x -g MANPATH (brew --prefix findutils)/libexec/gnuman $MANPATH
 
 # User bin folder
