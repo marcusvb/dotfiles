@@ -11,9 +11,9 @@ sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Set computer name
-sudo scutil --set ComputerName Hive
-sudo scutil --set LocalHostName Hive
-sudo scutil --set HostName Hive
+sudo scutil --set ComputerName Atomic
+sudo scutil --set LocalHostName Atomic
+sudo scutil --set HostName Atomic
 
 ###############################################################################
 # General UI/UX                                                               #
