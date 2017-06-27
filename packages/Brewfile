@@ -61,7 +61,7 @@
  +cask 'transmission'
  +cask 'virtualbox'
  +cask 'xquartz'
- +cask 'atom'
+ +cask 'visual-studio-code'
  +cask 'disk-inventory-x'
  +cask 'gyazo'
  +cask 'spotify'

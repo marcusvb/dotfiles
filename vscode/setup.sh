@@ -6,7 +6,7 @@ cd "$DIR"
 . ../scripts/symlink.sh
 
 SOURCE="$(realpath .)"
-DESTINATION="$(realpath ~/.atom)"
+DESTINATION="$(realpath ~/Library/Application\ Support/Code/User)"
 
 echo "Source path:\t\t $SOURCE"
 echo "Destination path:\t $DESTINATION"
