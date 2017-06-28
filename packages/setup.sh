@@ -19,7 +19,12 @@ find * -name "*.list" | while read fn; do
     fi
     while read package; do
         if [[ $package == $COMMENT ]];
-        then continue; else
+        then continue;
+
+        # Added homebrew dir for Ruby (El Cap permissions ect.)
+        elif [[ $cmd = "gem" ]]; then
+            echo "sudo $cmd install $package -n/usr/local/bin"
+        else
             echo "sudo $cmd install $package"
             $cmd install $package
         fi

@@ -10,5 +10,4 @@ function update
     brew cask doctor
     npm install npm -g
     npm update -g
-    apm update
 end
