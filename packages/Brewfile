@@ -1,5 +1,5 @@
 cask_args appdir: '/Applications'
- 
+
 tap 'caskroom/cask'
 tap 'caskroom/versions'
 tap 'homebrew/bundle'
@@ -7,9 +7,8 @@ tap 'homebrew/completions'
 tap 'marcusvb/tap'
 tap 'homebrew/versions'
 tap 'buo/cask-upgrade'
-tap 'marcusvb/homebrew-truecrypt'
 
- 
+
 brew 'coreutils'
 brew 'findutils', args: ['with-default-names']
 brew 'wget'
@@ -33,8 +32,10 @@ brew 'youtube-dl'
 cask 'java'
 cask 'android-sdk'
 cask 'android-platform-tools'
- 
- 
+
+#latex
+cask 'basictex'
+
 # Essentials
 cask 'iterm2'
 cask 'whatsapp'
@@ -69,7 +70,7 @@ cask 'disk-inventory-x'
 cask 'gyazo'
 cask 'spotify'
 cask 'teamspeak-client'
-cask 'truecrypt'
+cask 'veracrypt'
 cask 'vlc'
 
 #Many dependancies for sshfs, so we do it last.

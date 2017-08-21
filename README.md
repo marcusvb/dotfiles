@@ -29,6 +29,8 @@
     ln -s ~/ownCloud/videos ~/Videos
     ```
 
+7. Swap /Applications/Pulse Secure.app/Contents/Plugins/JamUI/PulseTray.app/Contents/Resources rename the grayscaled to colored for grayscaled Pulse Secure icon in the menu bar.
+
 ### Root (/)
 * bootstrap.sh - Calls all setup.sh scripts
 
