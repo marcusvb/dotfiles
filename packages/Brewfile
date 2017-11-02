@@ -33,9 +33,6 @@ cask 'java'
 cask 'android-sdk'
 cask 'android-platform-tools'
 
-#latex
-cask 'basictex'
-
 # Essentials
 cask 'iterm2'
 cask 'whatsapp'
@@ -43,8 +40,6 @@ cask 'avast-mac-security'
 cask 'google-chrome'
 cask 'the-unarchiver'
 cask 'adobe-acrobat-reader'
-#cask 'cleanmymac'
-cask 'little-snitch'
 cask 'alarm-clock'
 cask 'beardedspice'
 cask 'flux'
@@ -62,12 +57,6 @@ cask 'owncloud'
 cask 'telegram'
 cask 'transmission'
 
-#===== OLD =========
-# cask 'virtualbox'
-# cask 'teamspeak-client'
-#
-#===================
-
 cask 'xquartz'
 cask 'keepassxc'
 cask 'tunnelblick'
@@ -82,3 +71,13 @@ cask 'etcher'
 
 #Many dependancies for sshfs, so we do it last.
 brew 'sshfs'
+
+
+
+#===== OLD =========
+# cask 'virtualbox'
+# cask 'teamspeak-client'
+# cask 'cleanmymac'
+# cask 'basictex'
+# cask 'little-snitch'
+#===================
