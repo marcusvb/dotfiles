@@ -1,3 +1,3 @@
 function opencode
-    command open -a code $argv
+    command code open $argv
 end
