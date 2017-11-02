@@ -62,16 +62,23 @@ cask 'owncloud'
 cask 'telegram'
 cask 'transmission'
 
-#gonna make a cask for parallels
-#cask 'virtualbox'
+#===== OLD =========
+# cask 'virtualbox'
+# cask 'teamspeak-client'
+#
+#===================
+
 cask 'xquartz'
+cask 'keepassxc'
+cask 'tunnelblick'
 cask 'visual-studio-code'
 cask 'disk-inventory-x'
 cask 'gyazo'
 cask 'spotify'
-cask 'teamspeak-client'
+
 cask 'veracrypt'
 cask 'vlc'
+cask 'etcher'
 
 #Many dependancies for sshfs, so we do it last.
 brew 'sshfs'
