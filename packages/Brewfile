@@ -27,6 +27,10 @@ brew 'cask'
 brew 'iftop'
 brew 'nload'
 brew 'youtube-dl'
+brew 'ipmitool'
+
+#Adding Java8 as dependancy for Android sdk
+cask 'caskroom/versions/java8'
 
 # Android
 cask 'java'
@@ -36,13 +40,12 @@ cask 'android-platform-tools'
 # Essentials
 cask 'iterm2'
 cask 'whatsapp'
-cask 'avast-mac-security'
+cask 'avast-security'
 cask 'google-chrome'
 cask 'the-unarchiver'
 cask 'adobe-acrobat-reader'
 cask 'alarm-clock'
 cask 'beardedspice'
-cask 'flux'
 cask 'pb-for-desktop'
 cask 'filezilla'
 cask 'osxfuse'
@@ -80,4 +83,5 @@ brew 'sshfs'
 # cask 'cleanmymac'
 # cask 'basictex'
 # cask 'little-snitch'
+# cask 'flux'
 #===================
