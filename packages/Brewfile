@@ -71,7 +71,6 @@ cask 'spotify'
 cask 'veracrypt'
 cask 'vlc'
 cask 'etcher'
-cask 'keepassxc'
 
 #Many dependancies for sshfs, so we do it last.
 brew 'sshfs'
