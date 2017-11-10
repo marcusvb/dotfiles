@@ -66,10 +66,12 @@
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>330 300 620 392 0 0 1280 777 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>203 223 918 512 0 0 1280 777 </string>
+	<string>203 184 796 473 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 314 570 452 0 0 1280 777 </string>
+	<string>0 348 1280 429 0 0 1280 777 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -319,7 +321,7 @@
 			<key>HotKey Key Code</key>
 			<integer>10</integer>
 			<key>HotKey Modifier Activation</key>
-			<integer>3</integer>
+			<integer>0</integer>
 			<key>HotKey Modifier Flags</key>
 			<integer>1048576</integer>
 			<key>HotKey Window Animates</key>
@@ -708,6 +710,8 @@
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
+	<key>NoSyncPermissionToShowTip</key>
+	<false/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>531333249.300699</real>
 	<key>PointerActions</key>
@@ -747,6 +751,8 @@
 	<string>/Users/marcus/repos/dotfiles/iterm</string>
 	<key>PromptOnQuit</key>
 	<false/>
+	<key>SUAutomaticallyUpdate</key>
+	<true/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
@@ -756,12 +762,12 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-11-02T16:35:10Z</date>
+	<date>2017-11-10T08:23:13Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>TabStyle</key>
 	<integer>1</integer>
 	<key>iTerm Version</key>
-	<string>3.1.4</string>
+	<string>3.1.5</string>
 </dict>
 </plist>
