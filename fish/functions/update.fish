@@ -3,7 +3,7 @@ function update
     sudo softwareupdate -i -a
     brew update
     brew upgrade --force
-    brew cu
+    brew cu -fa
     brew cleanup
     brew cask cleanup
     brew doctor
