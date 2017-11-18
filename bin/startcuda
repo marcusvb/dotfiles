@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+echo "Input user, followed by [ENTER]:"
+read user
+
+echo "Input password, followed by [ENTER]:"
+read -s pswd
+
+ipmitool -I lanplus -H 192.168.2.90 -U $user -P $pswd chassis power on
+sleep 2
+ipmitool -I lanplus -H 192.168.2.90 -U $user -P $pswd raw 0x30 0x30 0x01 0x00
+ipmitool -I lanplus -H 192.168.2.90 -U $user -P $pswd raw 0x30 0x30 0x02 0xff 0x06

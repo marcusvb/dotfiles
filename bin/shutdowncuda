@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+echo "Input user, followed by [ENTER]:"
+read user
+
+echo "Input password, followed by [ENTER]:"
+read -s pswd
+
+ipmitool -I lanplus -H 192.168.2.90 -U $user -P $pswd chassis power soft
