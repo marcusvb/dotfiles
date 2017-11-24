@@ -24,8 +24,5 @@
         "javascriptreact",
         "vue"
     ],
-    "python.pythonPath": "/usr/local/opt/python/bin/python2.7",
-    "python.disablePromptForFeatures": [
-        "pep8"
-    ]
+    "python.pythonPath": "/usr/local/opt/python/bin/python2.7"
 }
