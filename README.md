@@ -27,6 +27,7 @@
     ln -s ~/ownCloud/pictures ~/Pictures
     ln -s ~/ownCloud/music ~/Music
     ln -s ~/ownCloud/videos ~/Videos
+    ln -s  ~/ownCloud/documents/personal_docs/work/ECP-KeePassX.app ECP-KeePassX.app
     ```
 
 7. Swap /Applications/Pulse Secure.app/Contents/Plugins/JamUI/PulseTray.app/Contents/Resources rename the grayscaled to colored for grayscaled Pulse Secure icon in the menu bar.
