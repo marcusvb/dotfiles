@@ -28,6 +28,7 @@ brew 'iftop'
 brew 'nload'
 brew 'youtube-dl'
 brew 'ipmitool'
+brew 'maven'
 
 #Adding Java8 as dependancy for Android sdk
 cask 'caskroom/versions/java8'
@@ -46,7 +47,6 @@ cask 'the-unarchiver'
 cask 'adobe-acrobat-reader'
 cask 'alarm-clock'
 cask 'beardedspice'
-cask 'pb-for-desktop'
 cask 'filezilla'
 cask 'osxfuse'
 cask 'android-file-transfer'
@@ -72,10 +72,19 @@ cask 'veracrypt'
 cask 'vlc'
 cask 'etcher'
 cask 'hammerspoon'
+cask 'borgbackup'
+cask 'bartender'
+
+cask 'aerial'
+cask 'real-vnc'
+cask 'sourcetree'
+cask 'intellij-idea'
+cask 'slack'
+
+
 
 #Many dependancies for sshfs, so we do it last.
 brew 'sshfs'
-
 
 
 #===== OLD =========
@@ -85,4 +94,5 @@ brew 'sshfs'
 # cask 'basictex'
 # cask 'little-snitch'
 # cask 'flux'
+# cask 'pb-for-desktop'
 #===================
