@@ -75,13 +75,22 @@ cask 'hammerspoon'
 cask 'borgbackup'
 cask 'bartender'
 
-cask 'aerial'
+cask 'aerial' #screensaver
+
+
+#==== ECP/devtools =====
+tap 'theeternalsw0rd/telnet'
+brew 'mono'
+brew 'csc'
+brew 'maven'
+brew 'telnet'
 cask 'real-vnc'
 cask 'sourcetree'
-cask 'intellij-idea'
+cask 'caskroom/versions/java7'
+cask 'caskroom/versions/java8'
+cask 'caskroom/cask/intellij-idea-ce'
 cask 'slack'
-
-
+#=======================
 
 #Many dependancies for sshfs, so we do it last.
 brew 'sshfs'
