@@ -29,6 +29,7 @@ brew 'nload'
 brew 'youtube-dl'
 brew 'ipmitool'
 brew 'maven'
+brew 'poppler' #pdf editor
 
 #Adding Java8 as dependancy for Android sdk
 cask 'caskroom/versions/java8'
