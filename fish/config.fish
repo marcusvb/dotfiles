@@ -16,3 +16,11 @@ set -x -g PATH $PATH ~/bin /usr/local/sbin
 #for mvn ECP
 set -x JAVA_HOME "/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home"
 
+#maven aliases
+alias mci='mvn clean install -T 1C -Dlockdown=true'
+alias mcis='mvn clean install -T 1C -DskipTests'
+alias mcio='mvn clean install -o -T 1C -Dlockdown=true'
+alias mcios='mvn clean install -o -T 1C -DskipTests'
+alias mi='mvn install -T 1C -Dlockdown=true'
+alias mio='mvn install -o -T 1C -Dlockdown=true'
+alias mios='mvn clean install -o -T 1C -DskipTests'

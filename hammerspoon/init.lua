@@ -20,5 +20,15 @@ function caffeinateWatcher(eventType)
     -- end
 end
 
+function killApps()
+    -- Kill apps here after 15 seconds of sleeping
+
+    hs.timer.usleep(15000000)
+    hs.execute("pkill Citrix Reciever")
+    hs.execute("pkill ReceiverHelper")
+    print("killed citrix")
+end
+
 sleepWatcher = hs.caffeinate.watcher.new(caffeinateWatcher)
 sleepWatcher:start()
+killApps()

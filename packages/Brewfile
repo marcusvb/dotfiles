@@ -29,6 +29,8 @@ brew 'nload'
 brew 'youtube-dl'
 brew 'ipmitool'
 brew 'maven'
+#adding WOL for dell
+brew 'wakeonlan'
 brew 'poppler' #pdf editor
 
 #Adding Java8 as dependancy for Android sdk
@@ -62,7 +64,7 @@ cask 'telegram'
 cask 'transmission'
 
 cask 'xquartz'
-cask 'keepassxc'
+#cask 'keepassxc'
 cask 'tunnelblick'
 cask 'visual-studio-code'
 cask 'disk-inventory-x'

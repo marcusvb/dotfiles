@@ -25,5 +25,6 @@
         "vue"
     ],
     "python.pythonPath": "/usr/local/opt/python/bin/python2.7",
-    "material-icon-theme.showUpdateMessage": false
+    "material-icon-theme.showUpdateMessage": false,
+    "git.autofetch": true
 }
