@@ -1,5 +1,4 @@
 {
-    "workbench.welcome.enabled": false,
     "workbench.iconTheme": "material-icon-theme",
     "workbench.colorTheme": "One Monokai Darker",
     "git.confirmSync": false,
@@ -16,15 +15,12 @@
     "files.insertFinalNewline": true,
     "window.zoomLevel": 0,
 
-    "python.linting.pylintEnabled": false,
+    "python.linting.pylintEnabled": true,
     "python.linting.pep8Enabled": true,
+    "python.disableInstallationCheck": true,
 
-    "eslint.validate": [
-        "javascript",
-        "javascriptreact",
-        "vue"
-    ],
-    "python.pythonPath": "/usr/local/opt/python/bin/python2.7",
+    "python.pythonPath": "/usr/bin/python",
     "material-icon-theme.showUpdateMessage": false,
-    "git.autofetch": true
+    "git.autofetch": true,
+    "workbench.startupEditor": "newUntitledFile"
 }

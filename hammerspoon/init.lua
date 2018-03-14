@@ -5,6 +5,7 @@ function caffeinateWatcher(eventType)
         print ("unlocked")
         hs.timer.usleep(1000000)
         hs.execute("open -a KeePassXC")
+        killApps(100000)
     end
     -- For restarting PB for desktop after sleep because it's momentarilly very
     -- buggy.
@@ -20,10 +21,10 @@ function caffeinateWatcher(eventType)
     -- end
 end
 
-function killApps()
+function killApps(time)
     -- Kill apps here after 15 seconds of sleeping
 
-    hs.timer.usleep(15000000)
+    hs.timer.usleep(time)
     hs.execute("pkill Citrix Reciever")
     hs.execute("pkill ReceiverHelper")
     print("killed citrix")
@@ -31,4 +32,4 @@ end
 
 sleepWatcher = hs.caffeinate.watcher.new(caffeinateWatcher)
 sleepWatcher:start()
-killApps()
+killApps(15000000)

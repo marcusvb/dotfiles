@@ -25,6 +25,9 @@ set -x JAVA_HOME "/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Ho
 #jupyter notebook salias
 alias jn='jupyter notebook'
 
+#ls complex alias
+alias lsc='ls -lhSar'
+
 #maven aliases
 alias mci='mvn clean install -T 1C -Dlockdown=true'
 alias mcis='mvn clean install -T 1C -DskipTests'
