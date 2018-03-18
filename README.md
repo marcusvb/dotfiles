@@ -35,14 +35,8 @@
 ### Root (/)
 * bootstrap.sh - Calls all setup.sh scripts
 
-### Atom (atom/)
-* setup.sh - Symlinks the config files to ~/.atom/
-* config.cson - Atom configuration
-* init.coffee - Atom initiation script
-* keymap.cson - Custom keymaps
-* projects.cson - Project definitions
-* snippets.cson - Custom auto-expanding snippets
-* styles.less - Custom styles
+### VSCode (vscode/)
+* setup.sh - moves the config file to the vscode directory
 
 ### User Bin (bin/)
 * setup.sh - Symlinks the other contents of the dotfiles/bin/ folder to ~/bin/
@@ -50,6 +44,7 @@
 files
 * sethidden - A shell script which takes command line arguments to show or hide
 hidden files
+* cudaon... - Custom IPMI commands for my homeserver
 
 ### Duti (duti/)
 * setup.sh - Sets the defaults set up in the different files
@@ -93,8 +88,4 @@ OS X Preferences
 * symlink.sh - Symlinks a file from a source path to a destination path in a
 verbose way, unlinking the existing file first, might it exist
 
-### Vim (vim/)
-* setup.sh - Symlinks all vim files to ~/
-* .vimrc - Basic Vim configuration
-
-### Big thanks to github.com/rkalis for original source code
+##### Big thanks to github.com/rkalis for original source code
