@@ -4,7 +4,6 @@ tap 'caskroom/cask'
 tap 'caskroom/versions'
 tap 'homebrew/bundle'
 tap 'homebrew/completions'
-tap 'marcusvb/tap'
 tap 'homebrew/versions'
 tap 'buo/cask-upgrade'
 
@@ -29,9 +28,9 @@ brew 'nload'
 brew 'youtube-dl'
 brew 'ipmitool'
 brew 'maven'
+
 #adding WOL for dell
 brew 'wakeonlan'
-brew 'poppler' #pdf editor
 
 #Adding Java8 as dependancy for Android sdk
 cask 'caskroom/versions/java8'
@@ -78,7 +77,7 @@ cask 'hammerspoon'
 cask 'borgbackup'
 cask 'bartender'
 
-cask 'aerial' #screensaver
+#cask 'aerial' #screensaver
 
 
 #==== ECP/devtools =====
@@ -101,6 +100,7 @@ brew 'sshfs'
 
 #===== OLD =========
 # cask 'virtualbox'
+# tap 'marcusvb/tap'
 # cask 'teamspeak-client'
 # cask 'cleanmymac'
 # cask 'basictex'

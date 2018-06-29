@@ -29,6 +29,8 @@ alias jn='jupyter notebook'
 alias lsc='ls -lhSar'
 
 #maven aliases
+alias mci-est='mvn clean install -rf :estatio-app'
+alias mci-est-skip='mvn clean install -DskipTests -rf :estatio-app'
 alias mci='mvn clean install -T 1C -Dlockdown=true'
 alias mcis='mvn clean install -T 1C -DskipTests'
 alias mcio='mvn clean install -o -T 1C -Dlockdown=true'
