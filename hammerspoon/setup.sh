@@ -8,9 +8,14 @@ cd "$DIR"
 SOURCE="$(realpath .)"
 DESTINATION="$(realpath ~/.hammerspoon)"
 
-echo "Source path:\t\t $SOURCE"
-echo "Destination path:\t $DESTINATION"
+info "Setting up Hammerspoon..."
 
-find * -name "*.lua" -o -name "*.applescript" | while read fn; do
+substep_info "Creating Hammerspoon folder..."
+mkdir -p $DESTINATION
+
+find * -name "*.lua" -o -name "*.applescript" -o -name "*.js" | while read fn; do
     symlink "$SOURCE/$fn" "$DESTINATION/$fn"
 done
+clear_broken_symlinks "$DESTINATION"
+
+success "Finished setting up Hammerspoon."

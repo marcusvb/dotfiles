@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-wakeonlan -i 192.168.2.255 84:2b:2b:ae:0c:82

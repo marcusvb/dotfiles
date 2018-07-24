@@ -8,11 +8,14 @@ cd "$DIR"
 SOURCE="$(realpath .)"
 DESTINATION="$(realpath ~/bin)"
 
-echo "Source path:\t\t $SOURCE"
-echo "Destination path:\t $DESTINATION"
+info "Setting up user bin..."
 
-mkdir -vp "$DESTINATION"
+substep_info "Creating user bin folder..."
+mkdir -p "$DESTINATION"
 
 find * -not -name "setup.sh" -type f | while read fn; do
     symlink "$SOURCE/$fn" "$DESTINATION/$fn"
 done
+clear_broken_symlinks "$DESTINATION"
+
+success "Finished setting up user bin."

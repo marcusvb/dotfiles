@@ -8,9 +8,11 @@ cd "$DIR"
 SOURCE="$(realpath .)"
 DESTINATION="$(realpath ~)"
 
-echo "Source path:\t\t $SOURCE"
-echo "Destination path:\t $DESTINATION"
+info "Configuraing git..."
 
 find . -name ".git*" | while read fn; do
+    fn=$(basename $fn)
     symlink "$SOURCE/$fn" "$DESTINATION/$fn"
 done
+
+success "Finished configuring git."

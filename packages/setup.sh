@@ -3,30 +3,26 @@
 DIR=$(dirname "$0")
 cd "$DIR"
 
+. ../scripts/symlink.sh
+
 COMMENT=\#*
 
 sudo -v
 
+info "Installing Brewfile packages..."
 brew bundle
+success "Finished installing Brewfile packages."
 
 find * -name "*.list" | while read fn; do
     cmd="${fn%.*}"
-    # Check if the command starts with a number,
-    # if so, remove the first two characters from the command
-    # Supports up to ten priority lists
-    if [[ "$cmd" =~ [0-9]+[[:space:]].* ]]; then
-        cmd=${cmd:2:${#cmd}}
-    fi
+    set -- $cmd
+    info "Installing $1 packages..."
     while read package; do
         if [[ $package == $COMMENT ]];
-        then continue;
-
-        # Added homebrew dir for Ruby (El Cap permissions ect.)
-        elif [[ $cmd = "gem" ]]; then
-            echo "sudo $cmd install $package -n/usr/local/bin"
-        else
-            echo "sudo $cmd install $package"
-            $cmd install $package
+        then continue
         fi
+        substep_info "Installing $package..."
+        $cmd $package
     done < "$fn"
+    success "Finished installing $1 packages."
 done
