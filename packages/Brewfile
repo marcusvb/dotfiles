@@ -29,9 +29,6 @@ brew 'youtube-dl'
 brew 'ipmitool'
 brew 'maven'
 
-#adding WOL for dell
-brew 'wakeonlan'
-
 #Adding Java8 as dependancy for Android sdk
 cask 'caskroom/versions/java8'
 
@@ -77,9 +74,6 @@ cask 'hammerspoon'
 cask 'borgbackup'
 cask 'bartender'
 
-#cask 'aerial' #screensaver
-
-
 #==== ECP/devtools =====
 tap 'theeternalsw0rd/telnet'
 brew 'mono'
@@ -91,12 +85,12 @@ cask 'sourcetree'
 cask 'caskroom/versions/java7'
 cask 'caskroom/versions/java8'
 cask 'caskroom/cask/intellij-idea-ce'
+cask 'pycharm-ce'
 cask 'slack'
 #=======================
 
 #Many dependancies for sshfs, so we do it last.
 brew 'sshfs'
-
 
 #===== OLD =========
 # cask 'virtualbox'
@@ -107,4 +101,6 @@ brew 'sshfs'
 # cask 'little-snitch'
 # cask 'flux'
 # cask 'pb-for-desktop'
+# brew 'wakeonlan'
+# cask 'aerial' #screensaver
 #===================
