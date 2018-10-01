@@ -29,13 +29,9 @@ brew 'youtube-dl'
 brew 'ipmitool'
 brew 'maven'
 
-#Adding Java8 as dependancy for Android sdk
-cask 'caskroom/versions/java8'
-
 # Android
-cask 'java'
-cask 'android-sdk'
 cask 'android-platform-tools'
+cask 'android-sdk'
 
 # Essentials
 cask 'iterm2'
@@ -48,23 +44,18 @@ cask 'alarm-clock'
 cask 'beardedspice'
 cask 'filezilla'
 cask 'osxfuse'
-cask 'android-file-transfer'
 
-cask 'my-popcorn-time'
 cask 'scroll-reverser'
 cask 'teamviewer'
 cask 'keepingyouawake'
-cask 'skype'
 cask 'owncloud'
-cask 'telegram'
+#cask 'telegram'
 cask 'transmission'
 
-cask 'xquartz'
 #cask 'keepassxc'
 cask 'tunnelblick'
 cask 'visual-studio-code'
 cask 'disk-inventory-x'
-cask 'gyazo'
 cask 'spotify'
 
 cask 'veracrypt'
@@ -73,6 +64,8 @@ cask 'etcher'
 cask 'hammerspoon'
 cask 'borgbackup'
 cask 'bartender'
+cask 'google-drive-file-stream'
+cask 'karabiner-elements'
 
 #==== ECP/devtools =====
 tap 'theeternalsw0rd/telnet'
@@ -82,7 +75,6 @@ brew 'maven'
 brew 'telnet'
 cask 'real-vnc'
 cask 'sourcetree'
-cask 'caskroom/versions/java7'
 cask 'caskroom/versions/java8'
 cask 'caskroom/cask/intellij-idea-ce'
 cask 'pycharm-ce'

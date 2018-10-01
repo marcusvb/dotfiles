@@ -8,9 +8,4 @@ function update
     brew cask cleanup
     brew doctor
     brew cask doctor
-
-    # I dont use node
-    #npm install npm -g
-    #npm update -g
-
 end

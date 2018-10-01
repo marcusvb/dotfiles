@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-
-OUTPUT=$(open -a /Applications/ECP-KeePassX.app)
-echo "$OUTPUT"
-
-
