@@ -11,7 +11,6 @@
     "editor.minimap.maxColumn": 100,
     "editor.renderWhitespace": "boundary",
     "editor.renderIndentGuides": true,
-
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
     "window.zoomLevel": 0,
@@ -26,7 +25,6 @@
     "workbench.startupEditor": "newUntitledFile",
     "latex-workshop.view.pdf.viewer": "browser",
     "latex-workshop.message.update.show": false,
-    "csharp.format.enable": false,
     "editor.multiCursorModifier": "ctrlCmd",
     "markdown-preview-enhanced.liveUpdate": true
 }
