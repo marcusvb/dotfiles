@@ -11,9 +11,9 @@ sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Set computer name
-sudo scutil --set ComputerName Atomic
-sudo scutil --set LocalHostName Atomic
-sudo scutil --set HostName Atomic
+sudo scutil --set ComputerName Macbook Pro Marcus
+sudo scutil --set LocalHostName Macbook Pro Marcus
+sudo scutil --set HostName Macbook Pro Marcus
 
 ###############################################################################
 # General UI/UX                                                               #

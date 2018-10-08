@@ -14,7 +14,7 @@ set -x -g PATH (brew --prefix coreutils)/libexec/gnubin $PATH
 set -x -g PATH $PATH ~/bin /usr/local/sbin
 
 #for mvn ECP
-set -x JAVA_HOME "/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home"
+set -x JAVA_HOME "/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home"
 
 #set home for anaconda
 #set -x  PATH /usr/local/anaconda3/bin $PATH

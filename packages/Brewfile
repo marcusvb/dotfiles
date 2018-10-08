@@ -3,8 +3,7 @@ cask_args appdir: '/Applications'
 tap 'caskroom/cask'
 tap 'caskroom/versions'
 tap 'homebrew/bundle'
-tap 'homebrew/completions'
-tap 'homebrew/versions'
+tap 'homebrew/homebrew-core'
 tap 'buo/cask-upgrade'
 
 
@@ -13,13 +12,12 @@ brew 'findutils', args: ['with-default-names']
 brew 'wget'
 brew 'gcc'
 brew 'gdb'
-brew 'valgrind'
-# brew 'node'
+brew 'valgrind' #failed
 brew 'fish'
-brew 'duti'
+brew 'duti' #failed
 brew 'python'
 brew 'python3'
-brew 'git'
+brew 'git' #using
 brew 'htop'
 brew 'ssh-copy-id'
 brew 'cask'
@@ -27,32 +25,26 @@ brew 'iftop'
 brew 'nload'
 brew 'youtube-dl'
 brew 'ipmitool'
-brew 'maven'
 
 # Android
 cask 'android-platform-tools'
-cask 'android-sdk'
+cask 'android-sdk' #failed
 
 # Essentials
 cask 'iterm2'
 cask 'whatsapp'
-cask 'avast-security'
 cask 'google-chrome'
 cask 'the-unarchiver'
-cask 'adobe-acrobat-reader'
-cask 'alarm-clock'
 cask 'beardedspice'
-cask 'filezilla'
 cask 'osxfuse'
 
 cask 'scroll-reverser'
 cask 'teamviewer'
 cask 'keepingyouawake'
-cask 'owncloud'
-#cask 'telegram'
+cask 'nextcloud'
 cask 'transmission'
 
-#cask 'keepassxc'
+cask 'keepassxc'
 cask 'tunnelblick'
 cask 'visual-studio-code'
 cask 'disk-inventory-x'
@@ -71,28 +63,15 @@ cask 'karabiner-elements'
 tap 'theeternalsw0rd/telnet'
 brew 'mono'
 brew 'csc'
-brew 'maven'
-brew 'telnet'
-cask 'real-vnc'
-cask 'sourcetree'
-cask 'caskroom/versions/java8'
-cask 'caskroom/cask/intellij-idea-ce'
+cask 'java8' 
+brew 'maven' 
+brew 'telnet' 
+cask 'real-vnc' 
+cask 'sourcetree' 
+cask 'caskroom/cask/intellij-idea-ce' 
 cask 'pycharm-ce'
-cask 'slack'
+cask 'slack' 
 #=======================
 
 #Many dependancies for sshfs, so we do it last.
 brew 'sshfs'
-
-#===== OLD =========
-# cask 'virtualbox'
-# tap 'marcusvb/tap'
-# cask 'teamspeak-client'
-# cask 'cleanmymac'
-# cask 'basictex'
-# cask 'little-snitch'
-# cask 'flux'
-# cask 'pb-for-desktop'
-# brew 'wakeonlan'
-# cask 'aerial' #screensaver
-#===================
