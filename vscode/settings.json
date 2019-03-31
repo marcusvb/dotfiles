@@ -1,6 +1,5 @@
 {
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "One Monokai Darker",
     "git.confirmSync": false,
     "telemetry.enableTelemetry": false,
 
@@ -26,5 +25,11 @@
     "latex-workshop.view.pdf.viewer": "browser",
     "latex-workshop.message.update.show": false,
     "editor.multiCursorModifier": "ctrlCmd",
-    "markdown-preview-enhanced.liveUpdate": true
+    "markdown-preview-enhanced.liveUpdate": false,
+    "git.enableSmartCommit": true,
+    "files.associations": {
+        "*.cvc": "c"
+    },
+    "extensions.ignoreRecommendations": true,
+    "workbench.colorTheme": "One Monokai Darker"
 }

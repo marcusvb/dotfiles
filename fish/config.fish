@@ -40,3 +40,5 @@ alias mio='mvn install -o -T 1C -Dlockdown=true'
 alias mios='mvn clean install -o -T 1C -DskipTests'
 
 
+set -g fish_user_paths "/usr/local/opt/ruby/bin" $fish_user_paths
+set -g fish_user_paths "/usr/local/opt/sqlite/bin" $fish_user_paths

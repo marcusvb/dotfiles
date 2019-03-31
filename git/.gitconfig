@@ -13,3 +13,5 @@
 	default = simple
 [commit]
 	template = /Users/marcus/.stCommitMsg
+[alias]
+	pra = pull --rebase --autostash
