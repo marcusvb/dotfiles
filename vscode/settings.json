@@ -31,5 +31,9 @@
         "*.cvc": "c"
     },
     "extensions.ignoreRecommendations": true,
-    "workbench.colorTheme": "One Monokai Darker"
+    "workbench.colorTheme": "One Monokai Darker",
+    "cSpell.userWords": [
+        "kubernetes"
+    ],
+    "yaml.validate": false
 }
