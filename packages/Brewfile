@@ -69,7 +69,7 @@ cask 'vlc'
 cask 'hammerspoon'
 cask 'borgbackup'
 cask 'bartender'
-cask 'google-drive-file-stream'
+#cask 'google-drive-file-stream'
 cask 'karabiner-elements'
 
 #==== ECP/devtools =====

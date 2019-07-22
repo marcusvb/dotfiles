@@ -19,15 +19,14 @@
 6. Make sure owncloud is setup and run. For owncloud-homedir Symlinks run:
     ```
     sudo -v
-    rm -rf ~/Documents
-    rm -rf ~/Pictures
-    rm -rf ~/Music
-    rm -rf ~/Videos
-    ln -s ~/ownCloud/documents ~/Documents
-    ln -s ~/ownCloud/pictures ~/Pictures
-    ln -s ~/ownCloud/music ~/Music
-    ln -s ~/ownCloud/videos ~/Videos
-    ln -s  ~/ownCloud/documents/personal_docs/work/ECP-KeePassX.app ECP-KeePassX.app
+    sudo rm -rf ~/Documents
+    sudo rm -rf ~/Pictures
+    sudo rm -rf ~/Music
+    sudo rm -rf ~/Videos
+    ln -s ~/Nextcloud/documents ~/Documents
+    ln -s ~/Nextcloud/pictures ~/Pictures
+    ln -s ~/Nextcloud/music ~/Music
+    ln -s ~/Nextcloud/videos ~/Videos
     ```
 
 7. Swap /Applications/Pulse Secure.app/Contents/Plugins/JamUI/PulseTray.app/Contents/Resources rename the grayscaled to colored for grayscaled Pulse Secure icon in the menu bar.
@@ -37,6 +36,7 @@
 
 ### VSCode (vscode/)
 * setup.sh - moves the config file to the vscode directory
+* and it also installs the extensions from the list
 
 ### User Bin (bin/)
 * setup.sh - Symlinks the other contents of the dotfiles/bin/ folder to ~/bin/
@@ -44,11 +44,6 @@
 files
 * sethidden - A shell script which takes command line arguments to show or hide
 hidden files
-* cudaon... - Custom IPMI commands for my homeserver
-
-### Duti (duti/)
-* setup.sh - Sets the defaults set up in the different files
-* app.package.id - Contains all extensions for the specified program
 
 ### Fish (fish/)
 * setup.sh - Symlinks all fish files to their corresponding location in
