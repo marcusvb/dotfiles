@@ -4,23 +4,17 @@ set -x -g TERM "xterm-256color"
 
 # Coreutils bin and man folders
 set -x -g PATH (brew --prefix coreutils)/libexec/gnubin $PATH
-# set -x -g MANPATH (brew --prefix coreutils)/libexec/gnuman $MANPATH
+set -x -g MANPATH (brew --prefix coreutils)/libexec/gnuman $MANPATH
 
 # Findutils bin and man folders
-#set -x -g PATH (brew --prefix findutils)/libexec/gnubin $PATH
-# set -x -g MANPATH (brew --prefix findutils)/libexec/gnuman $MANPATH
+set -x -g PATH (brew --prefix findutils)/libexec/gnubin $PATH
+set -x -g MANPATH (brew --prefix findutils)/libexec/gnuman $MANPATH
 
 # User bin folder
 set -x -g PATH $PATH ~/bin /usr/local/sbin
 
 #for mvn ECP
-set -x JAVA_HOME "/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home"
-
-#set home for anaconda
-#set -x  PATH /usr/local/anaconda3/bin $PATH
-
-#python2 of homebrew
-#export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+set -x JAVA_HOME "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home"
 
 #jupyter notebook salias
 alias jn='jupyter notebook'
