@@ -31,6 +31,12 @@
 
 7. Swap /Applications/Pulse Secure.app/Contents/Plugins/JamUI/PulseTray.app/Contents/Resources rename the grayscaled to colored for grayscaled Pulse Secure icon in the menu bar.
 
+8. Install cronjob to backup keepass
+```
+# backup keepass
+@reboot /Users/marcus/repos/dotfiles/cronjob/backup_keepass.sh
+```
+
 ### Root (/)
 * bootstrap.sh - Calls all setup.sh scripts
 
