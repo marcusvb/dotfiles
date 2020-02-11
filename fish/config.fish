@@ -17,7 +17,7 @@ set -x -g PATH $PATH ~/bin /usr/local/sbin
 set -x JAVA_HOME "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home"
 
 #jupyter notebook salias
-alias jn='jupyter notebook'
+# alias jn='jupyter notebook'
 
 #ls complex alias
 alias lsc='ls -lhSar'

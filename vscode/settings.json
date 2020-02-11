@@ -15,7 +15,7 @@
     "window.zoomLevel": 0,
 
     "python.linting.pylintEnabled": false,
-    "python.linting.pep8Enabled": false,
+    "python.linting.pycodestyleEnabled": false,
     "python.disableInstallationCheck": true,
 
     "python.pythonPath": "/usr/local/bin/python3",
@@ -33,7 +33,10 @@
     "extensions.ignoreRecommendations": true,
     "workbench.colorTheme": "One Monokai Darker",
     "cSpell.userWords": [
-        "kubernetes"
+        "kubernetes",
+        "neuroevolution"
     ],
-    "yaml.validate": false
+    "yaml.validate": false,
+    "python.linting.enabled": true,
+    "diffEditor.ignoreTrimWhitespace": false
 }

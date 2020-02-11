@@ -417,4 +417,7 @@ defaults  write  net.tunnelblick.tunnelblick  doNotLaunchOnLogin  -bool  yes
 ###
 defaults write com.apple.desktopservices DSDontWriteNetworkStores true﻿
 
+### Disable mouse acceleration
+defaults write -g com.apple.mouse.scaling -1
+
 echo "Done. Note that some of these changes require a logout/restart to take effect."
