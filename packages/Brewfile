@@ -71,6 +71,7 @@ cask 'borgbackup'
 cask 'bartender'
 #cask 'google-drive-file-stream'
 cask 'karabiner-elements'
+cask 'mathpix-snipping-tool'
 
 #==== Devtools =====
 tap 'theeternalsw0rd/telnet'
