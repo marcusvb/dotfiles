@@ -72,7 +72,7 @@ cask 'bartender'
 #cask 'google-drive-file-stream'
 cask 'karabiner-elements'
 
-#==== ECP/devtools =====
+#==== Devtools =====
 tap 'theeternalsw0rd/telnet'
 brew 'mono'
 cask 'adoptopenjdk8'
@@ -80,12 +80,12 @@ brew 'maven'
 brew 'telnet'
 cask 'vnc-viewer'
 cask 'sourcetree'
-cask 'caskroom/cask/intellij-idea-ce'
-cask 'pycharm-ce'
+cask 'intellij-idea'
+cask 'pycharm'
 cask 'slack'
 cask 'postman'
 cask 'docker'
-cask 'jupyter-notebook-ql'
+#cask 'jupyter-notebook-ql'
 #=======================
 
 #Many dependancies for sshfs, so we do it last.
