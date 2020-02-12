@@ -35,6 +35,7 @@
 ```
 # backup keepass
 @reboot /Users/marcus/repos/dotfiles/cronjob/backup_keepass.sh
+@reboot /Users/marcus/repos/dotfiles/cronjob/spotify_stoage_limit.sh
 ```
 
 ### Root (/)
