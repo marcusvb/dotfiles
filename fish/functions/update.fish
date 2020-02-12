@@ -8,4 +8,5 @@ function update
     brew cask cleanup
     brew doctor
     brew cask doctor
+    rm -rf  (brew --cache)
 end
