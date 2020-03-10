@@ -6,6 +6,8 @@ function autoMountHomeShares()
 
     if (currentSSID == homeSSID) then
         hs.osascript.applescriptFromFile("mount.applescript")
+    else
+        hs.osascript.applescriptFromFile("umount.applescript")
     end
 end
 

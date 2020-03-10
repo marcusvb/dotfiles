@@ -1,11 +1,11 @@
-hyper:bind({}, "e", function()
-    hs.notify.new( {title="VPN", subTitle="Starting VPN connection to ECP"} ):send()
-    return hs.osascript.applescript(
-        string.format('tell application "Tunnelblick" \
-                        connect "ECP" \
-                      end tell')
-    )
-end)
+-- hyper:bind({}, "e", function()
+--     hs.notify.new( {title="VPN", subTitle="Starting VPN connection to ECP"} ):send()
+--     return hs.osascript.applescript(
+--         string.format('tell application "Tunnelblick" \
+--                         connect "ECP" \
+--                       end tell')
+--     )
+-- end)
 
 hyper:bind({}, "m", function()
     hs.notify.new( {title="VPN", subTitle="Starting VPN connection to Marcus - Home"} ):send()
