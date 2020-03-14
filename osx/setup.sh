@@ -107,7 +107,7 @@ defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool true
 
 # Set a blazingly fast keyboard repeat rate
-defaults write NSGlobalDomain KeyRepeat -int 0
+# defaults write NSGlobalDomain KeyRepeat -int -1
 
 # Set language and text formats
 # Note: if you’re in the US, replace `EUR` with `USD`, `Centimeters` with
@@ -417,7 +417,9 @@ defaults  write  net.tunnelblick.tunnelblick  doNotLaunchOnLogin  -bool  yes
 ###
 defaults write com.apple.desktopservices DSDontWriteNetworkStores true﻿
 
-### Disable mouse acceleration
-defaults write -g com.apple.mouse.scaling -1
+defaults write com.apple.dock autohide-delay -float 0
+defaults write com.apple.dock autohide-time-modifier -float 0.1
+defaults write .GlobalPreferences com.apple.mouse.scaling -1
+
 
 echo "Done. Note that some of these changes require a logout/restart to take effect."
