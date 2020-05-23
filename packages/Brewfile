@@ -26,20 +26,20 @@ brew 'im2a'
 brew 'ncdu'
 brew 'screenfetch'
 brew 'watch'
-brew 'mveritym/homebrew-mel/kubedecode'
+# brew 'mveritym/homebrew-mel/kubedecode'
 brew 'tzvetkoff/extras/im2a'
 
 ####### DEV #########
-brew 'kubedecode'
-brew 'kubernetes-cli'
-brew 'kubernetes-helm'
-brew 'kompose'
-brew 'postgresql'
+#brew 'kubedecode'
+#brew 'kubernetes-cli'
+#brew 'kubernetes-helm'
+#brew 'kompose'
+#brew 'postgresql'
 
 
 # Android
-cask 'android-platform-tools'
-cask 'android-sdk' #failed
+# cask 'android-platform-tools'
+# cask 'android-sdk'
 
 # Essentials
 cask 'iterm2'
@@ -73,16 +73,16 @@ cask 'mathpix-snipping-tool'
 cask 'google-backup-and-sync'
 
 #==== Devtools =====
-tap 'theeternalsw0rd/telnet'
+# tap 'theeternalsw0rd/telnet'
 brew 'mono'
 cask 'adoptopenjdk8'
 brew 'maven'
-brew 'telnet'
-cask 'vnc-viewer'
+# brew 'telnet'
+# cask 'vnc-viewer'
 cask 'sourcetree'
 cask 'intellij-idea'
 cask 'pycharm'
-cask 'slack'
+# cask 'slack'
 cask 'postman'
 cask 'docker'
 #cask 'jupyter-notebook-ql'

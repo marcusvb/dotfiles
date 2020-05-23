@@ -38,5 +38,6 @@
     ],
     "yaml.validate": false,
     "python.linting.enabled": true,
-    "diffEditor.ignoreTrimWhitespace": false
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.codeActionsOnSave": null
 }
