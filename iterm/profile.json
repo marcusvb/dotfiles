@@ -47,6 +47,7 @@
   ],
   "Scrollback Lines" : 0,
   "HotKey Window Reopens On Activation" : false,
+  "Draw Powerline Glyphs" : true,
   "Flashing Bell" : true,
   "BM Growl" : true,
   "Ansi 3 Color" : {
