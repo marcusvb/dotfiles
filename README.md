@@ -52,26 +52,12 @@ files
 * sethidden - A shell script which takes command line arguments to show or hide
 hidden files
 
-### Fish (fish/)
-* setup.sh - Symlinks all fish files to their corresponding location in
-~/.config/fish/
-* config.fish - Adds ~/bin to PATH
-* completions/
-  * repo.fish - Contains all repos as completions for the repo command
-* functions/
-  * clear.fish - Clears the screen and shows fish_greeting
-  * emptytrash.fish - Empties trash and clears system logs
-  * fish_greeting.fish - My personal fish greeting using the
-  full-colour fish logo
-  * fish_prompt.fish - The Classic + Git prompt from the fish web config
-  * ls.fish - Calling ls with parameter --color=auto
-  * pubkey.fish - Copies the public key to the clipboard
-  * repo.fish - Finds a repository and jumps to it
-  * setup.fish - Initial setup for a new fish installation,
-  contains abbreviations
-  * update.fish - Installs OS X Software Updates, updates Ruby gems, Homebrew,
-  npm, and their installed packages
-  * week.fish - Returns the current week number
+### ZSH (zsh/)
+* setup.sh - Symlinks the zshrc and .p10k.zsh to that of the home directory
+* ~/.zshrc contains all aliases, and functions for the terminal
+* .p10k.zsh contains the theme settings for POWER10K for zsh
+* Don't forget to install extra plugins for .p10k.zsh, and setup iTerm to use proper encoding for charachters
+
 
 ### Git (git/)
 * setup.sh - Symlinks all git files to ~/
