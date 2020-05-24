@@ -58,6 +58,7 @@ cask 'tunnelblick'
 cask 'visual-studio-code'
 cask 'disk-inventory-x'
 cask 'spotify'
+cask 'zoom'
 
 cask 'videostream'
 cask 'veracrypt'
