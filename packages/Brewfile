@@ -5,6 +5,7 @@ tap 'homebrew/homebrew-core'
 tap 'buo/cask-upgrade'
 tap 'tzvetkoff/extras'
 
+brew 'coreutils'
 brew 'wget'
 brew 'gcc'
 brew 'gdb'
