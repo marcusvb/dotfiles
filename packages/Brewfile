@@ -4,6 +4,7 @@ tap 'homebrew/bundle'
 tap 'homebrew/homebrew-core'
 tap 'buo/cask-upgrade'
 tap 'tzvetkoff/extras'
+tap 'AdoptOpenJDK/openjdk'
 
 brew 'coreutils'
 brew 'wget'

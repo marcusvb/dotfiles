@@ -58,6 +58,12 @@ hidden files
 * .p10k.zsh contains the theme settings for POWER10K for zsh
 * Don't forget to install extra plugins for .p10k.zsh, and setup iTerm to use proper encoding for charachters
 
+#### Enabling Plugins (zsh-autosuggestions & zsh-syntax-highlighting)
+ * Download zsh-autosuggestions by
+ `git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions`
+ * Download zsh-syntax-highlighting by
+ `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting`
+
 
 ### Git (git/)
 * setup.sh - Symlinks all git files to ~/
