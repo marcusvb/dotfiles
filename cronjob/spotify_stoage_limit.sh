@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if grep "storage.size" /Users/marcus/Library/Application\ Support/Spotify/prefs
+if grep -q "storage.size" /Users/marcus/Library/Application\ Support/Spotify/prefs
 then
     :
 else
