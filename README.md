@@ -13,25 +13,8 @@
   git clone git@github.com:marcusvb/dotfiles.git
   ```
 4. Run the `bootstrap.sh` script
-5. Install missing applications from the Mac App Store or Internet
-  * [UvAVPN](http://student.uva.nl/en/az/content/uvavpn/\download/download-uvavpn-software.html)
 
-6. Make sure owncloud is setup and run. For owncloud-homedir Symlinks run:
-    ```
-    sudo -v
-    sudo rm -rf ~/Documents
-    sudo rm -rf ~/Pictures
-    sudo rm -rf ~/Music
-    sudo rm -rf ~/Videos
-    ln -s ~/Nextcloud/documents ~/Documents
-    ln -s ~/Nextcloud/pictures ~/Pictures
-    ln -s ~/Nextcloud/music ~/Music
-    ln -s ~/Nextcloud/videos ~/Videos
-    ```
-
-7. Swap /Applications/Pulse Secure.app/Contents/Plugins/JamUI/PulseTray.app/Contents/Resources rename the grayscaled to colored for grayscaled Pulse Secure icon in the menu bar.
-
-8. Install cronjob to backup keepass
+5. Install cronjob to backup keepass
 ```
 # backup keepass
 @reboot /Users/marcus/repos/dotfiles/cronjob/backup_keepass.sh
@@ -56,7 +39,7 @@ hidden files
 * setup.sh - Symlinks the zshrc and .p10k.zsh to that of the home directory
 * ~/.zshrc contains all aliases, and functions for the terminal
 * .p10k.zsh contains the theme settings for POWER10K for zsh
-* Don't forget to install extra plugins for .p10k.zsh, and setup iTerm to use proper encoding for charachters
+* Don't forget to install ohmyzsh, extra plugins for .p10k.zsh, and setup iTerm to use proper encoding for charachters
 
 #### Enabling Plugins (zsh-autosuggestions & zsh-syntax-highlighting)
  * Download zsh-autosuggestions by
