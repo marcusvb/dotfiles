@@ -51,7 +51,6 @@ cask 'osxfuse'
 cask 'scroll-reverser'
 cask 'teamviewer'
 cask 'keepingyouawake'
-cask 'nextcloud'
 cask 'transmission'
 
 cask 'keepassxc'
