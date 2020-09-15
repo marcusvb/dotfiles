@@ -115,10 +115,9 @@ function update(){
     brew upgrade --force
     brew cu -fa
     brew cleanup
-    brew cask cleanup
     brew doctor
     brew cask doctor
-    rm -rf (brew --cache)
+    rm -rf $(brew --cache)
 }
 
 
@@ -144,3 +143,9 @@ function update(){
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/marcus/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/marcus/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/marcus/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/marcus/google-cloud-sdk/completion.zsh.inc'; fi
