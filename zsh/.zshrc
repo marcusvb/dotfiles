@@ -101,7 +101,7 @@ function lsa --description "List contents of directory, using haltr args"(){
 }
 
 function pubkey(){
-    cat ~/.ssh/id_rsa.pub | pbcopy; and echo '=> Public key copied to pasteboard.'
+    cat ~/.ssh/id_rsa.pub | pbcopy; echo '=> Public key copied to pasteboard.'
 }
 
 function repo(){
