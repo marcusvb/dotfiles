@@ -25,10 +25,12 @@
     "latex-workshop.view.pdf.viewer": "browser",
     "latex-workshop.message.update.show": false,
     "editor.multiCursorModifier": "ctrlCmd",
-    "markdown-preview-enhanced.liveUpdate": false,
+    "markdown-preview-enhanced.liveUpdate": true,
     "git.enableSmartCommit": true,
     "files.associations": {
-        "*.cvc": "c"
+        "*.cvc": "c",
+        "*.cu": "cpp",
+        "*.cuh": "cpp"
     },
     "extensions.ignoreRecommendations": true,
     "workbench.colorTheme": "One Monokai Darker",
