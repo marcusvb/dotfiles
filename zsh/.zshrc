@@ -50,6 +50,9 @@ fi
 alias jn='jupyter notebook'
 alias lsc='ls -lhSar'
 
+# TMP MSC THESIS aliases
+alias ul='rsync -avzp --exclude="*".pickle /Users/marcus/repos/master-thesis/code/* lisa:~/code'
+alias dl='rsync -avzp lisa:~/code/"*".pickle /Users/marcus/repos/master-thesis/code/'
 
 # PATHS
 # custom bin path

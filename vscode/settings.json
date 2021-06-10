@@ -3,7 +3,7 @@
     "git.confirmSync": false,
     "telemetry.enableTelemetry": false,
 
-    "editor.rulers": [79],
+    "editor.rulers": [],
     "editor.roundedSelection": false,
     "editor.minimap.enabled": true,
     "editor.minimap.renderCharacters": false,
@@ -12,7 +12,6 @@
     "editor.renderIndentGuides": true,
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
-    "window.zoomLevel": 0,
 
     "python.linting.pylintEnabled": false,
     "python.linting.pycodestyleEnabled": false,
@@ -33,7 +32,6 @@
         "*.cuh": "cpp"
     },
     "extensions.ignoreRecommendations": true,
-    "workbench.colorTheme": "One Monokai Darker",
     "cSpell.userWords": [
         "kubernetes",
         "neuroevolution"
@@ -41,5 +39,10 @@
     "yaml.validate": false,
     "python.linting.enabled": true,
     "diffEditor.ignoreTrimWhitespace": false,
-    "editor.codeActionsOnSave": null
+    "editor.codeActionsOnSave": null,
+    "workbench.editor.untitled.hint": "hidden",
+    "workbench.colorTheme": "One Monokai Darker",
+    "cSpell.enableFiletypes": [
+        "!cpp"
+    ]
 }
