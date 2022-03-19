@@ -17,8 +17,9 @@
 5. Install cronjob to backup keepass
 ```
 # backup keepass
-@reboot /Users/marcus/repos/dotfiles/cronjob/backup_keepass.sh
-@reboot /Users/marcus/repos/dotfiles/cronjob/spotify_stoage_limit.sh
+@reboot /Users/marcusvanbergen/repos/dotfiles/cronjob/backup_keepass.sh
+@reboot /Users/marcusvanbergen/repos/dotfiles/cronjob/spotify_stoage_limit.sh
+@reboot /Users/marcusvanbergen/repos/dotfiles/cronjob/sync_chrome_safari.scpt
 ```
 
 ### Root (/)

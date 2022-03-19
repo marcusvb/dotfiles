@@ -1,9 +1,8 @@
 # FOR PK10 theme first run:
 # git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
 
-
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/marcus/.oh-my-zsh"
+export ZSH="/Users/marcusvanbergen/.oh-my-zsh"
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
@@ -49,10 +48,6 @@ fi
 # Aliases
 alias jn='jupyter notebook'
 alias lsc='ls -lhSar'
-
-# TMP MSC THESIS aliases
-alias ul='rsync -avzp --exclude="*".pickle /Users/marcus/repos/master-thesis/code/* lisa:~/code'
-alias dl='rsync -avzp lisa:~/code/"*".pickle /Users/marcus/repos/master-thesis/code/'
 
 # PATHS
 # custom bin path
@@ -148,10 +143,10 @@ function update(){
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/marcus/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/marcus/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/Users/marcusvanbergen/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/marcusvanbergen/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/marcus/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/marcus/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '/Users/marcusvanbergen/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/marcusvanbergen/google-cloud-sdk/completion.zsh.inc'; fi
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
