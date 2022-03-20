@@ -118,6 +118,10 @@ function update(){
     rm -rf $(brew --cache)
 }
 
+function sync_bookmarks(){
+    osascript /Users/marcusvanbergen/repos/dotfiles/cronjob/sync_chrome_safari.scpt
+}
+
 
 # function repodir(){
 #     set repo_base ~/repos
