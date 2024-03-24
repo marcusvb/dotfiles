@@ -2,7 +2,7 @@
 
 ## Usage
 1. Copy your saved ssh keys to ~/.ssh/
-2. Install Homebrew (with taps) and git
+2. Install Homebrew (and git)
 
   ```bash
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -12,13 +12,12 @@
   ```
   git clone git@github.com:marcusvb/dotfiles.git
   ```
-4. Run the `bootstrap.sh` script
+4. Go through the dirs and apply what you want
 
 5. Install cronjob to backup keepass
 ```
 # backup keepass
-@reboot /Users/marcusvanbergen/repos/dotfiles/cronjob/backup_keepass.sh
-@reboot /Users/marcusvanbergen/repos/dotfiles/cronjob/spotify_stoage_limit.sh
+@reboot /Users/marcus/repos/dotfiles/cronjob/backup_keepass.sh
 ```
 
 ### Root (/)
@@ -42,10 +41,9 @@ hidden files
 * Don't forget to install ohmyzsh, extra plugins for .p10k.zsh, and setup iTerm to use proper encoding for charachters
 
 #### Enabling Plugins (zsh-autosuggestions & zsh-syntax-highlighting)
- * Download zsh-autosuggestions by
- `git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions`
- * Download zsh-syntax-highlighting by
- `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting`
+- `git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k`
+- `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
+- `git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions`
 
 
 ### Git (git/)
@@ -55,7 +53,7 @@ several compiled files
 * .gitconfig - Sets several global Git variables
 
 ### OS X Preferences (osx/)
-* set_defaults.sh - Executes a long list of commands pertaining to
+* setup.sh - Executes a long list of commands pertaining to
 OS X Preferences
 
 ### Packages (packages/)

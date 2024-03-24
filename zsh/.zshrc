@@ -2,7 +2,7 @@
 # git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/marcusvanbergen/.oh-my-zsh"
+export ZSH="/Users/marcus/.oh-my-zsh"
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
@@ -45,16 +45,9 @@ else
   export EDITOR='nano'
 fi
 
-# Aliases
-alias jn='jupyter notebook'
-alias lsc='ls -lhSar'
-
 # PATHS
 # custom bin path
 export PATH=~/bin:$PATH
-
-# java home
-# export JAVA_HOME "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home"
 
 
 
@@ -66,6 +59,11 @@ function week(){
     date +%V
 }
 
+
+# TODO: 
+# add git pra
+# add toggle hidden / set hidden as fucntions
+# add other functions
 
 function clear_preview(){
     defaults delete com.apple.Preview.LSSharedFileList RecentDocuments
@@ -93,7 +91,6 @@ function show_iterm(){
     /usr/libexec/PlistBuddy -c 'Delete :LSUIElement' /Applications/iTerm.app/Contents/Info.plist
 }
 
-
 function lsa --description "List contents of directory, using haltr args"(){
     ls -haltr $argv
 }
@@ -116,10 +113,6 @@ function update(){
     brew doctor
     brew cask doctor
     rm -rf $(brew --cache)
-}
-
-function sync_bookmarks(){
-    osascript /Users/marcusvanbergen/repos/dotfiles/cronjob/sync_chrome_safari.scpt
 }
 
 
@@ -146,11 +139,6 @@ function sync_bookmarks(){
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/marcusvanbergen/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/marcusvanbergen/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/marcusvanbergen/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/marcusvanbergen/google-cloud-sdk/completion.zsh.inc'; fi
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
