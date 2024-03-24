@@ -1,0 +1,67 @@
+{
+    "git.confirmSync": false,
+    "telemetry.telemetryLevel": "off",
+    "editor.rulers": [],
+    "editor.roundedSelection": false,
+    "editor.minimap.enabled": true,
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.maxColumn": 100,
+    "editor.renderWhitespace": "boundary",
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.pycodestyleEnabled": false,
+    "python.disableInstallationCheck": true,
+    "python.pythonPath": "/usr/local/bin/python3",
+    "material-icon-theme.showUpdateMessage": false,
+    "git.autofetch": true,
+    "workbench.startupEditor": "welcomePageInEmptyWorkbench",
+    "latex-workshop.view.pdf.viewer": "browser",
+    "latex-workshop.message.update.show": false,
+    "markdown-preview-enhanced.liveUpdate": true,
+    "git.enableSmartCommit": true,
+    "files.associations": {
+        "*.cvc": "c",
+        "*.cu": "cpp",
+        "*.cuh": "cpp"
+    },
+    "cSpell.userWords": [
+        "kubernetes",
+        "neuroevolution"
+    ],
+    "yaml.validate": false,
+    "python.linting.enabled": true,
+    "editor.codeActionsOnSave": null,
+    "cSpell.enableFiletypes": [
+        "!cpp"
+    ],
+    "editor.guides.indentation": true,
+    "redhat.telemetry.enabled": false,
+    "files.autoSave": "afterDelay",
+    "workbench.editor.empty.hint": "hidden",
+    "editor.formatOnSave": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "window.confirmBeforeClose": "keyboardOnly",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "workbench.colorTheme": "Default Dark Modern",
+    "window.restoreWindows": "all",
+    "terminal.integrated.automationProfile.linux": {
+        "path": "/bin/bash"
+    },
+    "terminal.integrated.defaultProfile.linux": "tmux-shell",
+    "terminal.integrated.profiles.linux": {
+        // here we can add existing profiles
+        "tmux-shell": {
+            "path": "tmux",
+            "args": [
+                "new-session",
+                "-A",
+                "-s",
+                "vscode-${workspaceFolder}"
+            ]
+        }
+    },
+    "extensions.ignoreRecommendations": true,
+    "debug.onTaskErrors": "abort",
+    "C_Cpp.intelliSenseUpdateDelay": 500
+}

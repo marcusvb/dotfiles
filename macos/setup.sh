@@ -121,9 +121,6 @@ defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
 # Enable press-and-hold for keys instead of key repeat
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool true
 
-# Set a blazingly fast keyboard repeat rate
-# defaults write NSGlobalDomain KeyRepeat -int -1
-
 # Set language and text formats
 # Note: if you’re in the US, replace `EUR` with `USD`, `Centimeters` with
 # `Inches`, `en_GB` with `en_US`, and `true` with `false`.
@@ -144,9 +141,6 @@ defaults write com.apple.dock autohide-time-modifier -int 0;
 defaults write -globalDomain com.apple.mouse.scaling -float 0;
 defaults write com.apple.dock autohide-time-modifier -float 0.1;
 defaults write com.apple.dock "autohide-delay" -float 0;
-defaults write NSGlobalDomain KeyRepeat -int -1;
-
-
 
 
 ############ Activity monitor #############

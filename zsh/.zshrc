@@ -49,6 +49,7 @@ fi
 # custom bin path
 export PATH=~/bin:$PATH
 
+PS1='%B%F{#ff1000}[%F{#d0b000}%n%F{#80f000}%b@%B%F{#00c0c0}%m %F{#ff80a0}%~%F{#ff1000}]%f%b$ '
 
 
 ####################################
@@ -59,11 +60,40 @@ function week(){
     date +%V
 }
 
-
-# TODO: 
-# add git pra
-# add toggle hidden / set hidden as fucntions
-# add other functions
+function toggle_hidden()
+{
+    STATUS=$(defaults read com.apple.finder AppleShowAllFiles)
+    if [ "$STATUS" -eq "1" ]
+    then
+        defaults write com.apple.finder AppleShowAllFiles -bool false
+    else
+        defaults write com.apple.finder AppleShowAllFiles -bool true
+    fi
+    killall Finder
+}
+function menubar() {
+    bool=$(defaults read NSGlobalDomain _HIHideMenuBar)
+    if [ "$bool" -eq "0" ]
+    then
+        defaults write NSGlobalDomain _HIHideMenuBar -bool true
+    else
+        defaults write NSGlobalDomain _HIHideMenuBar -bool false
+    fi
+    killall Finder
+}
+function lsa --description "List contents of directory, using haltr args"(){
+    ls -haltr $argv
+}
+function pubkey(){
+    cat ~/.ssh/id_rsa.pub | pbcopy; echo '=> Public key copied to pasteboard.'
+}
+function resetDock(){
+    defaults write com.apple.dock autohide-time-modifier -int 0
+    defaults write .GlobalPreferences com.apple.mouse.scaling -1
+    defaults write com.apple.dock autohide-time-modifier -float 0.1
+    defaults write com.apple.dock autohide-delay -float 0
+    killall Dock
+}
 
 function clear_preview(){
     defaults delete com.apple.Preview.LSSharedFileList RecentDocuments
