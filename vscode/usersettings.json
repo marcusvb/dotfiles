@@ -63,5 +63,6 @@
     },
     "extensions.ignoreRecommendations": true,
     "debug.onTaskErrors": "abort",
-    "C_Cpp.intelliSenseUpdateDelay": 500
+    "C_Cpp.intelliSenseUpdateDelay": 500,
+    "editor.stickyScroll.enabled": false
 }
