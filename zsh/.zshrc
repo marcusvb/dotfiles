@@ -62,12 +62,12 @@ function week(){
 
 function toggle_hidden()
 {
-    STATUS=$(defaults read com.apple.finder AppleShowAllFiles)
+    STATUS=$(defaults read com.apple.Finder AppleShowAllFiles)
     if [ "$STATUS" -eq "1" ]
     then
-        defaults write com.apple.finder AppleShowAllFiles -bool false
+        defaults write com.apple.Finder AppleShowAllFiles -bool false
     else
-        defaults write com.apple.finder AppleShowAllFiles -bool true
+        defaults write com.apple.Finder AppleShowAllFiles -bool true
     fi
     killall Finder
 }
