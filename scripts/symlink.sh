@@ -13,6 +13,10 @@ symlink() {
     fi
 }
 
+realpath1() {
+    [[ $1 = /* ]] && echo "$1" || echo "$PWD/${1#./}"
+}
+
 clear_broken_symlinks() {
     find -L "$1" -type l | while read fn; do
         if rm "$fn"; then

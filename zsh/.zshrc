@@ -71,7 +71,7 @@ function toggle_hidden()
     fi
     killall Finder
 }
-function menubar() {
+function toggle_menubar() {
     bool=$(defaults read NSGlobalDomain _HIHideMenuBar)
     if [ "$bool" -eq "0" ]
     then
@@ -87,7 +87,7 @@ function lsa --description "List contents of directory, using haltr args"(){
 function pubkey(){
     cat ~/.ssh/id_rsa.pub | pbcopy; echo '=> Public key copied to pasteboard.'
 }
-function resetDock(){
+function reset_dock(){
     defaults write com.apple.dock autohide-time-modifier -int 0
     defaults write .GlobalPreferences com.apple.mouse.scaling -1
     defaults write com.apple.dock autohide-time-modifier -float 0.1
@@ -102,7 +102,7 @@ function clear_preview(){
     killall Dock
 }
 
-function emptytrash(){
+function empty_trash(){
     sudo rm -rfv /Volumes/*/.Trashes
     sudo rm -rfv ~/.Trash
     sudo rm -rfv /private/var/log/asl/*.asl

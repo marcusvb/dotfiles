@@ -179,3 +179,7 @@ defaults write com.apple.terminal StringEncodings -array 4
 
 # Don’t display the annoying prompt when quitting iTerm
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
+
+
+# Rebinds the capslock key to F14 (which is used by hammerspoon as the hyper key)
+defaults write com.apple.loginwindow LoginHook `pwd`/rebind-capslock.sh
