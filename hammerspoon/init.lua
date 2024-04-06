@@ -1,8 +1,6 @@
 require "hyper"
 require "caffeinate"
 require "minimising"
-require "spectacle"
-require "shortcuts"
 
 -----------------------------------------------
 -- Reload config on write
