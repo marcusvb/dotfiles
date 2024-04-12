@@ -24,3 +24,4 @@ cask 'spotify'
 
 cask 'veracrypt'
 cask 'vlc'
+cask 'mrkai77/cask/loop'
