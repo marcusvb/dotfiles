@@ -129,8 +129,22 @@ function pubkey(){
     cat ~/.ssh/id_rsa.pub | pbcopy; echo '=> Public key copied to pasteboard.'
 }
 
-function repo(){
-    cd ~/repos
+function repo() {
+    # Change directory to ~/repos if no arguments are provided
+    if [[ $# -eq 0 ]]; then
+        cd ~/repos
+    else
+        # Search for a matching folder in ~/repos
+        local match=$(find ~/repos -mindepth 1 -maxdepth 2 -type d -name "*$1*" -print -quit)
+
+        # If a matching folder is found, change directory to it
+        if [[ -n $match ]]; then
+            cd "$match"
+        else
+            echo "No matching folder found in ~/repos."
+            cd ~/repos
+        fi
+    fi
 }
 
 # Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
@@ -145,26 +159,6 @@ function update(){
     rm -rf $(brew --cache)
 }
 
-
-# function repodir(){
-#     set repo_base ~/repos
-#     set repo_path (find "$repo_base" -mindepth 1 -maxdepth 10 -type d -name "*$argv*" | head -n 1)
-#     if not test "$argv"; || not test "$repo_path"; then
-#         set repo_path "$repo_base"
-#     fi
-#     echo "$repo_path"
-# }
-
-
-# function forrepos --description 'Evaluates $argv for all repo folders'(){
-#     for d in (find ~/repos -mindepth 2 -maxdepth 2 ! -path . -type d); do
-#         pushd $d
-#         set repo (basename $d)
-#         echo $repo
-#         eval (abbrex $argv)
-#         popd > /dev/null
-#     done
-# }
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
