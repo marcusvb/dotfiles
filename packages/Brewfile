@@ -1,7 +1,6 @@
 cask_args appdir: '/Applications'
 
 brew 'wget'
-brew 'miniconda'
 brew 'git'
 brew 'htop'
 brew 'ssh-copy-id'
