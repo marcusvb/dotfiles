@@ -171,22 +171,22 @@
   {
     "direction" : "TopLeftQuarter",
     "keybind" : [
-      126,
-      123
+      123,
+      126
     ]
   },
   {
     "direction" : "TopRightQuarter",
     "keybind" : [
-      126,
-      124
+      124,
+      126
     ]
   },
   {
     "direction" : "BottomRightQuarter",
     "keybind" : [
-      125,
-      124
+      124,
+      125
     ]
   },
   {
@@ -201,5 +201,32 @@
     "keybind" : [
       45
     ]
+  },
+  {
+    "cycle" : [
+      {
+        "direction" : "Fullscreen",
+        "keybind" : [
+
+        ]
+      },
+      {
+        "direction" : "AlmostMaximize",
+        "keybind" : [
+
+        ]
+      },
+      {
+        "direction" : "Minimize",
+        "keybind" : [
+
+        ]
+      }
+    ],
+    "direction" : "Cycle",
+    "keybind" : [
+      3
+    ],
+    "name" : "Full\/unfull\/minimize"
   }
 ]
