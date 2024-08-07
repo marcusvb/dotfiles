@@ -3,6 +3,8 @@ sudo scutil --set ComputerName Macbook Pro Marcus
 sudo scutil --set LocalHostName Macbook Pro Marcus
 sudo scutil --set HostName Macbook Pro Marcus
 
+# disbale securiity protection unsigned apps
+sudo spctl –master-disable
 
 ####################### Preferences #################
 # Set sidebar icon size to medium
