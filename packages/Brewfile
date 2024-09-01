@@ -5,6 +5,7 @@ brew 'git'
 brew 'htop'
 brew 'ssh-copy-id'
 brew 'watch'
+brew 'yt-dlp'
 
 
 # Essentials
