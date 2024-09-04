@@ -1,5 +1,6 @@
 {
     "git.confirmSync": false,
+    "terminal.integrated.copyOnSelection": true,
     "telemetry.telemetryLevel": "off",
     "editor.rulers": [],
     "editor.roundedSelection": false,
@@ -64,5 +65,23 @@
     "extensions.ignoreRecommendations": true,
     "debug.onTaskErrors": "abort",
     "C_Cpp.intelliSenseUpdateDelay": 500,
-    "editor.stickyScroll.enabled": false
+    "editor.stickyScroll.enabled": false,
+    "recommendations": [
+        "donjayamanne.githistory",
+        "mhutchie.git-graph",
+        "ms-azuretools.vscode-docker",
+        "ms-python.debugpy",
+        "ms-python.python",
+        "ms-vscode-remote.remote-containers",
+        "ms-vscode-remote.remote-ssh",
+        "ms-vscode-remote.remote-ssh-edit",
+        "ms-vscode-remote.vscode-remote-extensionpack",
+        "ms-vscode.cpptools",
+        "ms-vscode.remote-explorer",
+        "ms-vscode.remote-server",
+        "streetsidesoftware.code-spell-checker",
+        "tdennis4496.cmantic",
+        "waderyan.gitblame",
+        "wayou.vscode-todo-highlight"
+    ]
 }

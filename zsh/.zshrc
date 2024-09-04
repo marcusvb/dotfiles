@@ -65,8 +65,10 @@ function toggle_hidden()
     STATUS=$(defaults read com.apple.Finder AppleShowAllFiles)
     if [ "$STATUS" -eq "1" ]
     then
+        echo Hiding hidden files
         defaults write com.apple.Finder AppleShowAllFiles -bool false
     else
+        echo Showing hidden files
         defaults write com.apple.Finder AppleShowAllFiles -bool true
     fi
     killall Finder
