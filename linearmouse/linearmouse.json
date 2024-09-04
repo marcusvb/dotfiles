@@ -1,0 +1,106 @@
+{
+    "$schema": "https:\/\/schema.linearmouse.app\/0.9.5",
+    "schemes": [
+        {
+            "pointer": {
+                "disableAcceleration": true
+            },
+            "if": {
+                "device": {
+                    "productID": "0xc534",
+                    "vendorID": "0x46d",
+                    "category": "mouse",
+                    "productName": "USB Receiver"
+                }
+            },
+            "scrolling": {
+                "distance": {
+                    "vertical": "auto"
+                },
+                "acceleration": {
+                    "vertical": 1
+                },
+                "speed": {
+                    "vertical": 0
+                },
+                "reverse": {
+                    "vertical": true
+                }
+            }
+        },
+        {
+            "if": {
+                "device": {
+                    "productName": "Dell Universal Receiver",
+                    "productID": "0x301c",
+                    "vendorID": "0x413c",
+                    "category": "mouse"
+                }
+            },
+            "scrolling": {
+                "reverse": {
+                    "vertical": true
+                }
+            }
+        },
+        {
+            "scrolling": {
+                "acceleration": {
+                    "vertical": 1
+                },
+                "distance": {
+                    "vertical": "auto"
+                },
+                "reverse": {
+                    "vertical": true
+                },
+                "speed": {
+                    "vertical": 0
+                }
+            },
+            "pointer": {
+                "disableAcceleration": true
+            },
+            "if": {
+                "device": {
+                    "vendorID": "0x413c",
+                    "productName": "Dell Mouse MS5120W",
+                    "category": "mouse",
+                    "productID": "0x250c"
+                }
+            }
+        },
+        {
+            "scrolling": {
+                "reverse": {
+                    "vertical": false
+                },
+                "distance": {
+                    "vertical": "auto"
+                },
+                "acceleration": {
+                    "vertical": 1
+                },
+                "speed": {
+                    "vertical": 0
+                }
+            },
+            "if": {
+                "device": {
+                    "category": "trackpad",
+                    "productName": "Apple Internal Keyboard \/ Trackpad",
+                    "vendorID": "0x5ac",
+                    "productID": "0x343"
+                }
+            },
+            "pointer": {
+                "speed": 0.0689655172413792768,
+                "disableAcceleration": false,
+                "acceleration": 0.6875
+            },
+            "buttons": {
+                "universalBackForward": true
+            }
+        }
+    ]
+}
