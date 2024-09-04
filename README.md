@@ -66,9 +66,11 @@ several compiled files
 * karabiner.json - contains the config for karabiner to map / apply actions on certain key events
 * mute-mic.script - self explanatory
 
+### Linearmouse
+* linearmouse.json - Config of the application
+
 ### Loop
 * keybinds.json - Manually import this window mapping export
-
 
 ### macOS Preferences (macos/)
 * setup.sh - Executes a long list of commands pertaining to macOS Preferences
