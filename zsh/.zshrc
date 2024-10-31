@@ -162,6 +162,56 @@ function update(){
 }
 
 
+function sync_bookmarks() {
+    # Step 1: Check if Google Chrome is running and quit it
+    if pgrep -x "Google Chrome" > /dev/null; then
+        echo "Quitting Google Chrome..."
+        osascript -e 'tell application "Google Chrome" to quit'
+    else
+        echo "Google Chrome is not running."
+    fi
+
+    # Step 2: Open Safari if not already running, or bring it to the front if it is
+    if ! pgrep -x "Safari" > /dev/null; then
+        echo "Opening Safari..."
+        open -a "Safari"
+        sleep 2 # give Safari time to open
+    else
+        echo "Safari is already running. Bringing it to the front."
+        osascript -e 'tell application "Safari" to activate'
+    fi
+
+    # Step 3: Automate the process of opening "Import From" and selecting "Google Chrome..." in Safari
+    echo "Importing bookmarks from Google Chrome to Safari..."
+    osascript <<EOF
+    tell application "Safari"
+        activate
+        delay 1
+    end tell
+    tell application "System Events"
+        tell process "Safari"
+            click menu item "Import From" of menu "File" of menu bar 1
+            delay 1
+            click menu item "Google Chrome…" of menu 1 of menu item "Import From" of menu "File" of menu bar 1
+            delay 1
+            keystroke return
+        end tell
+    end tell
+EOF
+
+    # Step 4: Quit Safari
+    echo "Quitting Safari..."
+    sleep 2
+    killall "Safari" # Force quits Safari
+
+    # Step 5: Reopen Google Chrome
+    echo "Reopening Google Chrome..."
+    open -a "Google Chrome"
+
+}
+
+
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
@@ -182,3 +232,6 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+
+# RUST
+. "$HOME/.cargo/env"
