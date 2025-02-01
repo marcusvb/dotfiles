@@ -49,19 +49,19 @@
     "terminal.integrated.automationProfile.linux": {
         "path": "/bin/bash"
     },
-    "terminal.integrated.defaultProfile.linux": "tmux-shell",
-    "terminal.integrated.profiles.linux": {
-        // here we can add existing profiles
-        "tmux-shell": {
-            "path": "tmux",
-            "args": [
-                "new-session",
-                "-A",
-                "-s",
-                "vscode-${workspaceFolder}"
-            ]
-        }
-    },
+    // "terminal.integrated.defaultProfile.linux": "tmux-shell",
+    // "terminal.integrated.profiles.linux": {
+    //     // here we can add existing profiles
+    //     "tmux-shell": {
+    //         "path": "tmux",
+    //         "args": [
+    //             "new-session",
+    //             "-A",
+    //             "-s",
+    //             "vscode-${workspaceFolder}"
+    //         ]
+    //     }
+    // },
     "extensions.ignoreRecommendations": true,
     "debug.onTaskErrors": "abort",
     "C_Cpp.intelliSenseUpdateDelay": 500,
@@ -83,5 +83,11 @@
         "tdennis4496.cmantic",
         "waderyan.gitblame",
         "wayou.vscode-todo-highlight"
+    ],
+    "chat.commandCenter.enabled": false,
+    "terminal.integrated.inheritEnv": false,
+    "cmake.pinnedCommands": [
+        "workbench.action.tasks.configureTaskRunner",
+        "workbench.action.tasks.runTask"
     ]
 }

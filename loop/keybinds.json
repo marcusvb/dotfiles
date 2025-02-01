@@ -171,8 +171,8 @@
   {
     "direction" : "TopLeftQuarter",
     "keybind" : [
-      123,
-      126
+      126,
+      123
     ]
   },
   {
@@ -185,8 +185,8 @@
   {
     "direction" : "BottomRightQuarter",
     "keybind" : [
-      124,
-      125
+      125,
+      124
     ]
   },
   {

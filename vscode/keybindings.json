@@ -16,5 +16,9 @@
     {
         "key": "cmd+r",
         "command": "workbench.action.openRecent"
+    },
+    {
+        "key": "cmd+\\",
+        "command": "workbench.action.splitEditorToLeftGroup"
     }
 ]
