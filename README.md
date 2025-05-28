@@ -43,13 +43,8 @@
 
 1. Open `ITerm` > general > settings > load from `/Users/marcus/repos/dotfiles/iterm` and "import all settings and data". In `Profiles` load in the `Hotkey Window.json`
 
-1. Install cronjob to backup keepass
-```
-# backup keepass
-@reboot /Users/marcus/repos/dotfiles/cronjob/backup_keepass.sh
-```
 
-### Cronjob
+### Crontab
 * backup_keepass.sh - contains a script to cp the keepass db
 
 ### Git (git/)
