@@ -17,10 +17,9 @@
 1. Setup macOs/ folder, and set keybinds (if needed) and defaults
 
 1. Remapping keys:
-
-    * Remapping §/± key to \`/~
-    * copy paste the `com.marcus.remapkeys.plist` file to `/Library/LaunchDaemons/`
-    * Activate this with `sudo launchctl load -w /Library/LaunchDaemons/com.marcus.remapkeys.plist`
+    #### Remap keys
+    Run `setup.sh` which:
+    * maps the ±/§ key -> `/~
 
     #### Karabiner
     Run `setup.sh` which:
@@ -36,7 +35,7 @@
     Dictation key is mapped to execute mute script
 
     #### Modifier keys
-    `Caplock key -> ^ Control` (right control - macOS just doesn't specify this. Allows us to use this as a hotkey for Loop)
+    `Caps lock key -> ^ Control` (right control - macOS just doesn't specify this. Allows us to use this as a hotkey for Loop)
 
 1. Go through the dirs and apply what you want, e.g. `cd/vscode; ./setup.sh`
 

@@ -1,5 +1,6 @@
 #! /usr/bin/env sh
 
+BASE=$(basename "$(pwd)")
 DIR=$(dirname "$0")
 cd "$DIR"
 
@@ -8,11 +9,11 @@ cd "$DIR"
 SOURCE="$(realpath .)"
 DESTINATION="$(realpath ~)"
 
-info "Configuraing git..."
+info "Setting up $BASE..."
 
 find . -name ".git*" | while read fn; do
     fn=$(basename $fn)
     symlink "$SOURCE/$fn" "$DESTINATION/$fn"
 done
 
-success "Finished configuring git."
+success "Finished setting up $BASE"
