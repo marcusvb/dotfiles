@@ -137,7 +137,7 @@ function repo() {
         cd ~/repos
     else
         # Search for a matching folder in ~/repos
-        local match=$(find ~/repos -mindepth 1 -maxdepth 2 -type d -name "*$1*" -print -quit)
+        local match=$(find -L ~/repos -mindepth 1 -maxdepth 2 -type d -name "*$1*" -print -quit)
 
         # If a matching folder is found, change directory to it
         if [[ -n $match ]]; then

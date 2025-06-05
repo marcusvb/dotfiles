@@ -18,6 +18,6 @@ find * -not -name "setup.sh" -type f | while read fn; do
     symlink "$SOURCE/$fn" "$DESTINATION/$fn"
 done
 
-cat "list-extensions" | xargs -L 1 echo code --install-extension
+cat "list-extensions" | xargs -L 1 code --install-extension
 
 success "Finished setting up $BASE"
