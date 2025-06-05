@@ -14,15 +14,22 @@ cask 'google-chrome'
 cask 'the-unarchiver'
 cask 'transmission'
 
+# Utils
 cask 'keepassxc'
-cask 'tunnelblick'
-cask 'visual-studio-code'
 cask 'spotify'
-
-cask 'veracrypt'
 cask 'vlc'
 cask 'mrkai77/cask/loop'
 cask 'linearmouse'
 cask 'karabiner-elements'
-cask 'miniconda'
 cask 'disk-inventory-x'
+cask 'mullvad-vpn'
+cask 'mullvad-browser'
+cask 'tailscale'
+cask 'moonlight'
+
+# Dev
+cask 'visual-studio-code'
+cask 'miniconda'
+cask 'docker'
+cask 'dbeaver-community'
+cask 'lm-studio'
