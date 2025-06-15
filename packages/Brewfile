@@ -23,7 +23,6 @@ cask 'linearmouse'
 cask 'karabiner-elements'
 cask 'disk-inventory-x'
 cask 'mullvad-vpn'
-cask 'mullvad-browser'
 cask 'tailscale'
 cask 'moonlight'
 
