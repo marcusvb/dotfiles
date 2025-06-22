@@ -190,9 +190,9 @@ function sync_bookmarks() {
     end tell
     tell application "System Events"
         tell process "Safari"
-            click menu item "Import From" of menu "File" of menu bar 1
+            click menu item "Import From Browser" of menu "File" of menu bar 1
             delay 1
-            click menu item "Google Chrome…" of menu 1 of menu item "Import From" of menu "File" of menu bar 1
+            click menu item "Google Chrome…" of menu 1 of menu item "Import From Browser" of menu "File" of menu bar 1
             delay 1
             keystroke return
         end tell
