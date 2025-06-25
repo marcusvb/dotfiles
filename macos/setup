@@ -4,7 +4,7 @@ sudo scutil --set LocalHostName Macbook Pro Marcus
 sudo scutil --set HostName Macbook Pro Marcus
 
 # disbale securiity protection unsigned apps
-sudo spctl –master-disable
+sudo spctl --global-disable
 
 ####################### Preferences #################
 # Set sidebar icon size to medium
@@ -35,6 +35,7 @@ defaults write com.apple.LaunchServices LSQuarantine -bool false
 ###############################################################################
 # General UI/UX                                                               #
 ###############################################################################
+defaults write com.apple.WindowManager EnableStandardClickToShowDesktop -bool false
 
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=" "
@@ -83,9 +84,6 @@ defaults write com.apple.CrashReporter DialogType -string "none"
 # Set Help Viewer windows to non-floating mode
 defaults write com.apple.helpviewer DevMode -bool true
 
-# Restart automatically if the computer freezes
-sudo systemsetup -setrestartfreeze on
-
 # Disable smart quotes as they’re annoying when typing code
 defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 
@@ -117,9 +115,6 @@ defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int
 # (e.g. enable Tab in modal dialogs)
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
-# Follow the keyboard focus while zoomed in
-defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
-
 # Enable press-and-hold for keys instead of key repeat
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool true
 
@@ -131,18 +126,18 @@ defaults write NSGlobalDomain AppleLocale -string "en_NL"
 defaults write NSGlobalDomain AppleMeasurementUnits -string "Centimeters"
 defaults write NSGlobalDomain AppleMetricUnits -bool true
 
-# Set the timezone; see `sudo systemsetup -listtimezones` for other values
-sudo systemsetup -settimezone "Europe/Amsterdam" > /dev/null
-
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
 
 ########## DOCK #############
-defaults write com.apple.dock autohide-time-modifier -int 0;
 defaults write -globalDomain com.apple.mouse.scaling -float 0;
 defaults write com.apple.dock autohide-time-modifier -float 0.1;
 defaults write com.apple.dock "autohide-delay" -float 0;
+defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock tilesize -int 35;
+defaults write com.apple.dock show-recents -bool false;
+
 
 
 ############ Activity monitor #############

@@ -233,5 +233,3 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 
-# RUST
-. "$HOME/.cargo/env"

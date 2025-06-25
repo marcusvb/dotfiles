@@ -5,7 +5,7 @@
 1. `xcode-select --install`
 1. Install Homebrew (and git)
     ```bash
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     brew install git
     ```
 
@@ -14,7 +14,14 @@
     git clone git@github.com:marcusvb/dotfiles.git
     ```
 
-1. Setup macOs/ folder, and set keybinds (if needed) and defaults
+    or symlink from dataStore:
+    ```
+    ln -s /Volumes/DataStore/repos ~/repos
+    ```
+
+1. Setup packages/ folder
+
+1. Setup macos/ folder, and set keybinds
 
 1. Remapping keys:
     #### Remap keys
@@ -26,6 +33,8 @@
     * maps F6 -> F16 (work around that DnD button doesn't continue to work by default)
     * maps the dictation key to execute the mute script
 
+    * `Caps lock key -> ^ Control` (right control - macOS just doesn't specify this. Allows us to use this as a hotkey for Loop)
+
     ### MacOs key remapping (this needs to be manually set in the macOs settings)
     #### Keyboard (section)
     Move focus to next window -> CMD+§
@@ -34,8 +43,7 @@
     `Turn off Do Not Disturb -> F16` (see above where we map to f16 using karabiner, and here we set macOs to recognize this)
     Dictation key is mapped to execute mute script
 
-    #### Modifier keys
-    `Caps lock key -> ^ Control` (right control - macOS just doesn't specify this. Allows us to use this as a hotkey for Loop)
+
 
 1. Go through the dirs and apply what you want, e.g. `cd/vscode; ./setup.sh`
 
@@ -80,13 +88,18 @@ several compiled files
 * .p10k.zsh contains the theme settings for POWER10K for zsh
 * Don't forget to install ohmyzsh, extra plugins for .p10k.zsh, and setup iTerm to use proper encoding for characters
 
-#### Enabling Plugins (zsh-autosuggestions & zsh-syntax-highlighting)
-- `git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k`
-- `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
-- `git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions`
 
-### Packages (packages/)
-* setup.sh - Installs the contents of the .list files
+#### Enabling Plugins & Install OhMyZsh (zsh-autosuggestions & zsh-syntax-highlighting)
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+
+```
 
 ### Helper Scripts (scripts/)
 * symlink.sh - Symlinks a file from a source path to a destination path in a
