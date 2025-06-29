@@ -55,6 +55,8 @@
 ### Crontab
 * backup_keepass.sh - contains a script to cp the keepass db
 
+> Known issue: crontab not having permissions to execute. Under __Full disk access__ add `cron`
+
 ### Git (git/)
 * .gitignore_global - Contains global gitignores, such as OS-specific files and
 several compiled files
@@ -67,6 +69,7 @@ several compiled files
 ### Karabiner
 * karabiner.json - contains the config for karabiner to map / apply actions on certain key events
 * mute-mic.script - self explanatory
+> Known issue: notifications not working. Open script editor and run `display notification "hello"` which activates notifications for `osascript`.
 
 ### Linearmouse
 * linearmouse.json - Config of the application
