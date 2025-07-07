@@ -15,7 +15,6 @@ cask 'the-unarchiver'
 cask 'transmission'
 
 # Utils
-cask 'keepassxc'
 cask 'spotify'
 cask 'vlc'
 cask 'mrkai77/cask/loop'
