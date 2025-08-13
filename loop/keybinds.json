@@ -1,5 +1,23 @@
 [
   {
+    "direction" : "RightThird",
+    "keybind" : [
+      37
+    ]
+  },
+  {
+    "direction" : "HorizontalCenterThird",
+    "keybind" : [
+      40
+    ]
+  },
+  {
+    "direction" : "LeftThird",
+    "keybind" : [
+      38
+    ]
+  },
+  {
     "cycle" : [
       {
         "anchor" : 8,
@@ -178,8 +196,8 @@
   {
     "direction" : "TopRightQuarter",
     "keybind" : [
-      126,
-      124
+      124,
+      126
     ]
   },
   {
@@ -192,8 +210,8 @@
   {
     "direction" : "BottomLeftQuarter",
     "keybind" : [
-      123,
-      125
+      125,
+      123
     ]
   },
   {
