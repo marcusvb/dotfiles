@@ -18,7 +18,19 @@
         "command": "workbench.action.openRecent"
     },
     {
+        "key": "shift+cmd+\\",
+        "command": "workbench.action.splitEditorDown"
+    },
+    {
         "key": "cmd+\\",
         "command": "workbench.action.splitEditorToLeftGroup"
+    },
+    {
+        "key": "cmd+left",
+        "command": "workbench.action.navigateBack"
+    },
+    {
+        "key": "cmd+right",
+        "command": "workbench.action.navigateForward"
     }
 ]
