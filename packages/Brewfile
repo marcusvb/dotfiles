@@ -30,6 +30,6 @@ cask 'crossover'
 # Dev
 cask 'visual-studio-code'
 cask 'miniconda'
-cask 'podman-desktop'
+cask 'docker'
 cask 'dbeaver-community'
 cask 'lm-studio'

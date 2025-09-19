@@ -69,6 +69,7 @@
     "recommendations": [
         "donjayamanne.githistory",
         "mhutchie.git-graph",
+        "ms-azuretools.vscode-docker",
         "ms-python.debugpy",
         "ms-python.python",
         "ms-vscode-remote.remote-containers",
@@ -88,9 +89,5 @@
         "workbench.action.tasks.configureTaskRunner",
         "workbench.action.tasks.runTask"
     ],
-    "dev.containers.dockerPath": "podman",
-    "dev.containers.dockerComposePath": "podman-compose",
-    "containers.containerClient": "com.microsoft.visualstudio.containers.podman",
-    "containers.orchestratorClient": "com.microsoft.visualstudio.orchestrators.podmancompose",
-    "workbench.secondarySideBar.defaultVisibility": "hidden"
+    "C_Cpp.intelliSenseEngine": "disabled"
 }
