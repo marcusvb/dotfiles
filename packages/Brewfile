@@ -25,10 +25,11 @@ cask 'mullvad-vpn'
 cask 'tailscale-app'
 cask 'keepingyouawake'
 cask 'stats'
+cask 'crossover'
 
 # Dev
 cask 'visual-studio-code'
 cask 'miniconda'
-cask 'docker'
+cask 'podman-desktop'
 cask 'dbeaver-community'
 cask 'lm-studio'
