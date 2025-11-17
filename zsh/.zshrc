@@ -60,6 +60,17 @@ function week(){
     date +%V
 }
 
+function toggle_hybernate(){
+    current=$(pmset -g | awk '/hibernatemode/ {print $2}');
+    if [ "$current" = "3" ]; then
+        sudo pmset -a hibernatemode 25
+        echo "Toggled hibernation";
+    else
+        sudo pmset -a hibernatemode 3
+        echo "Toggled ram sleeping";
+    fi
+}
+
 function toggle_hidden()
 {
     STATUS=$(defaults read com.apple.Finder AppleShowAllFiles)
