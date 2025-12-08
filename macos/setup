@@ -6,6 +6,9 @@ sudo scutil --set HostName Macbook Pro Marcus
 # disbale securiity protection unsigned apps
 sudo spctl --global-disable
 
+# allow touch id for sudo
+sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
+
 ####################### Preferences #################
 # Set sidebar icon size to medium
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 2
