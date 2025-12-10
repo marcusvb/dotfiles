@@ -44,7 +44,7 @@
     "security.workspace.trust.untrustedFiles": "open",
     "window.confirmBeforeClose": "keyboardOnly",
     "diffEditor.ignoreTrimWhitespace": false,
-    "workbench.colorTheme": "Default Dark Modern",
+    "workbench.colorTheme": "GitHub Dark Default",
     "window.restoreWindows": "all",
     "terminal.integrated.automationProfile.linux": {
         "path": "/bin/bash"
@@ -89,5 +89,6 @@
         "workbench.action.tasks.configureTaskRunner",
         "workbench.action.tasks.runTask"
     ],
-    "C_Cpp.intelliSenseEngine": "disabled"
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "workbench.secondarySideBar.defaultVisibility": "hidden"
 }
