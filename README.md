@@ -21,24 +21,19 @@
 
 1. Setup packages/ folder
 
-1. Setup macos/ folder, and set keybinds
+1. Setup macos/ folder
 
 1. Remapping keys:
-    #### Karabiner
-    Run `setup.sh` which:
-    * maps F6 -> F16 (work around that DnD button doesn't continue to work by default)
-    * maps the dictation key to execute the mute script
-    * maps the ±/§ key -> `/~ (for laptop keyboard only)
-    * `Caps lock key -> ^ CMD Option` (right control - macOS just doesn't specify this. Allows us to use this as a hotkey for Loop)
+    * Karabiner
 
-    ### MacOs key remapping (this needs to be manually set in the macOs settings)
-    #### Keyboard (section)
-    Move focus to next window -> CMD+§
+        Run `setup.sh` which:
+        * maps the dictation key to execute the mute script
+        * maps the ±/§ key -> `/~ (for laptop keyboard only)
+        * `Caps lock key -> ^ CMD Option` (right control - macOS just doesn't specify this. Allows us to use this as a hotkey for Loop)
 
-    #### Mission control
-    `Turn off Do Not Disturb -> F16` (see above where we map to f16 using karabiner, and here we set macOs to recognize this)
-    Dictation key is mapped to execute mute script
+    * MacOs key remapping
 
+        This needs to be manually set in the macOs settings. Navigate to `system preferences > keyboard > navigation > shortcuts > keyboard > Move focus to next window`. Set shortcut to `CMD+§`
 
 
 1. Go through the dirs and apply what you want, e.g. `cd/vscode; ./setup.sh`
@@ -66,9 +61,6 @@ several compiled files
 * karabiner.json - contains the config for karabiner to map / apply actions on certain key events
 * mute-mic.script - self explanatory
 > Known issue: notifications not working. Open script editor and run `display notification "hello"` which activates notifications for `osascript`.
-
-### Linearmouse
-* linearmouse.json - Config of the application
 
 ### Loop
 * keybinds.json - Manually import this window mapping export
