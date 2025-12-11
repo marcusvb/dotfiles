@@ -24,16 +24,12 @@
 1. Setup macos/ folder, and set keybinds
 
 1. Remapping keys:
-    #### Remap keys
-    Run `setup.sh` which:
-    * maps the ±/§ key -> `/~
-
     #### Karabiner
     Run `setup.sh` which:
     * maps F6 -> F16 (work around that DnD button doesn't continue to work by default)
     * maps the dictation key to execute the mute script
-
-    * `Caps lock key -> ^ Control` (right control - macOS just doesn't specify this. Allows us to use this as a hotkey for Loop)
+    * maps the ±/§ key -> `/~ (for laptop keyboard only)
+    * `Caps lock key -> ^ CMD Option` (right control - macOS just doesn't specify this. Allows us to use this as a hotkey for Loop)
 
     ### MacOs key remapping (this needs to be manually set in the macOs settings)
     #### Keyboard (section)

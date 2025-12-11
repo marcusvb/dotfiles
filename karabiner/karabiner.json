@@ -14,19 +14,12 @@
                                 "description": "Change caps_lock to command+control+option+shift.",
                                 "from": {
                                     "key_code": "caps_lock",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
+                                    "modifiers": { "optional": ["any"] }
                                 },
                                 "to": [
                                     {
                                         "key_code": "left_control",
-                                        "modifiers": [
-                                            "left_command",
-                                            "left_option"
-                                        ]
+                                        "modifiers": ["left_command", "left_option"]
                                     }
                                 ],
                                 "type": "basic"
@@ -38,32 +31,26 @@
             "devices": [
                 {
                     "identifiers": {
-                        "is_pointing_device": true
+                        "is_keyboard": true,
+                        "product_id": 835,
+                        "vendor_id": 1452
                     },
-                    "ignore": false,
-                    "mouse_flip_vertical_wheel": true
+                    "simple_modifications": [
+                        {
+                            "from": { "key_code": "grave_accent_and_tilde" },
+                            "to": [{ "key_code": "non_us_backslash" }]
+                        }
+                    ]
                 }
             ],
             "fn_function_keys": [
                 {
-                    "from": {
-                        "key_code": "f5"
-                    },
-                    "to": [
-                        {
-                            "shell_command": "osascript ~/repos/dotfiles/karabiner/mute-mic.script"
-                        }
-                    ]
+                    "from": { "key_code": "f5" },
+                    "to": [{ "shell_command": "osascript ~/repos/dotfiles/karabiner/mute-mic.script" }]
                 },
                 {
-                    "from": {
-                        "key_code": "f6"
-                    },
-                    "to": [
-                        {
-                            "key_code": "f16"
-                        }
-                    ]
+                    "from": { "key_code": "f6" },
+                    "to": [{ "key_code": "f16" }]
                 }
             ],
             "name": "marcus-profile",

@@ -6,6 +6,7 @@ brew 'htop'
 brew 'ssh-copy-id'
 brew 'watch'
 brew 'yt-dlp'
+brew 'tmux'
 
 
 # Essentials

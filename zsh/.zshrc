@@ -222,10 +222,20 @@ EOF
 }
 
 
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+
+# Aliases
+alias ls='ls --color=auto'
+alias ll='ls -la'
+alias l.='ls -d .*'
+
+alias tm='tmux'
+alias tma='tmux attach-session -t'
+alias tmks='tmux kill-session -a'
+alias tml='tmux list-sessions'
+alias tmns='tmux new-session -s'
 
 
 # >>> conda initialize >>>
@@ -244,3 +254,8 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/marcus/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
