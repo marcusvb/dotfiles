@@ -30,7 +30,7 @@
         "command": "workbench.action.navigateBack"
     },
     {
-        "key": "cmd+right",
+        "key": "ctrl+=",
         "command": "workbench.action.navigateForward"
     }
 ]

@@ -6,6 +6,9 @@ sudo scutil --set HostName Macbook Pro Marcus
 # disbale securiity protection unsigned apps
 sudo spctl --global-disable
 
+# To prevent startup when opening the lid or connecting to power:
+sudo nvram BootPreference=%00
+
 # allow touch id for sudo
 sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
 
