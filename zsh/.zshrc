@@ -165,10 +165,8 @@ function update(){
     sudo softwareupdate -i -a
     brew update
     brew upgrade --force
-    brew cu -fa
     brew cleanup
     brew doctor
-    brew cask doctor
     rm -rf $(brew --cache)
 }
 
@@ -259,3 +257,8 @@ fpath=(/Users/marcus/.docker/completions $fpath)
 autoload -Uz compinit
 compinit
 # End of Docker CLI completions
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/marcus/.lmstudio/bin"
+# End of LM Studio CLI section
+
