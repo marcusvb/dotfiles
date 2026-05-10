@@ -26,6 +26,7 @@ cask 'tailscale-app'
 cask 'keepingyouawake'
 cask 'stats'
 cask 'crossover'
+cask 'grandperspective'
 
 # Dev
 cask 'visual-studio-code'
