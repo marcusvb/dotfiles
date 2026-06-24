@@ -220,6 +220,27 @@ EOF
 }
 
 
+# Set system clock to exactly one year ago from now
+function clock_minus_1y() {
+  sudo systemsetup -setusingnetworktime off >/dev/null
+
+  local ts
+  ts=$(date -v-1y +"%m%d%H%M%Y.%S")
+
+  sudo date "$ts"
+
+  echo "System time set to 1 year earlier:" $(date)
+
+}
+
+# Re-enable automatic network time
+function clock_auto() {
+  sudo systemsetup -setusingnetworktime on
+  sudo sntp -sS time.apple.com
+
+  echo "Network time enabled and synced." $(date)
+}
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
