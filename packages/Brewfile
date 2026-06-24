@@ -27,6 +27,7 @@ cask 'keepingyouawake'
 cask 'stats'
 cask 'crossover'
 cask 'grandperspective'
+cask 'teamviewer'
 
 # Dev
 cask 'visual-studio-code'
