@@ -8,7 +8,6 @@ brew 'watch'
 brew 'yt-dlp'
 brew 'tmux'
 
-
 # Essentials
 cask 'iterm2'
 cask 'google-chrome'
@@ -18,7 +17,7 @@ cask 'transmission'
 # Utils
 cask 'spotify'
 cask 'vlc'
-cask 'mrkai77/cask/loop'
+cask 'loop'
 cask 'scroll-reverser'
 cask 'karabiner-elements'
 cask 'mullvad-vpn'
@@ -28,6 +27,8 @@ cask 'stats'
 cask 'crossover'
 cask 'grandperspective'
 cask 'teamviewer'
+cask 'pearcleaner'
+
 
 # Dev
 cask 'visual-studio-code'
