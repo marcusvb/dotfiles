@@ -40,7 +40,8 @@
 
 1. Open `Loop` application and import the `keybinds.json`
 
-1. Open `ITerm` > general > settings > load from `/Users/marcus/repos/dotfiles/iterm` and "import all settings and data". In `Profiles` load in the `Hotkey Window.json`
+1. Import the entire profile's export via: Preferences -> General you will notice at the bottom of the panel, there is a setting Load preferences from a custom folder or URL:. There is a button next to it Save settings to Folder
+
 
 
 ### Crontab
@@ -74,10 +75,10 @@ several compiled files
 * settings.json
 
 ### ZSH (zsh/)
+* FIRST --> Install ohmyzsh, extra plugins for .p10k.zsh, and setup iTerm to use proper encoding for characters
 * setup.sh - Symlinks the zshrc and .p10k.zsh to that of the home directory
 * ~/.zshrc contains all aliases, and functions for the terminal
 * .p10k.zsh contains the theme settings for POWER10K for zsh
-* Don't forget to install ohmyzsh, extra plugins for .p10k.zsh, and setup iTerm to use proper encoding for characters
 
 
 #### Enabling Plugins & Install OhMyZsh (zsh-autosuggestions & zsh-syntax-highlighting)
