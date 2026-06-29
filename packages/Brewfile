@@ -28,6 +28,7 @@ cask 'crossover'
 cask 'grandperspective'
 cask 'teamviewer'
 cask 'pearcleaner'
+cask 'battery'
 
 
 # Dev
