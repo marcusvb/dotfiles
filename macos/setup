@@ -196,3 +196,4 @@ defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 # Speeding up network share writing                                           #
 ###############################################################################
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
+

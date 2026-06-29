@@ -80,6 +80,8 @@ several compiled files
 * ~/.zshrc contains all aliases, and functions for the terminal
 * .p10k.zsh contains the theme settings for POWER10K for zsh
 
+### Battery (battery/)
+* ./setup.sh -> downloads the cli tool, and all dependencies. After, calls the command to sail the battery between 77-85%
 
 #### Enabling Plugins & Install OhMyZsh (zsh-autosuggestions & zsh-syntax-highlighting)
 ```
